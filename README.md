@@ -31,6 +31,8 @@
 - [ ] remove the "impacts" section from the drone paper, reread the rest and make sure to update the TOC
 - maybe add a picture or keep the picture in the popup. Something where it's just the box that zooms/rearranges instead of a seperate window would be slick. for now take the first picture that's in the preview and figure out a gallery style way of viewing the pictures.
     - Add pictures from the portolio folder on my windows laptop so there's some sort of scrolling images for the car popups. Also add the connecting rod 1 and 2 pictures. Should probably be converted to step, run FEA on it to do a buckling analysis and done as a 4 pane pic(1,2,FEA1,FEA2)
+- [ ] Add a preview picture that shows up when sending links to the site (verify with linkedin profile)
+- [ ] Make it so clicking outside the popup closes the window
 
 ## Maybe List:
 
