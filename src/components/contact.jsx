@@ -156,16 +156,6 @@ class Contact extends React.Component {
             </div>
           </div>
         </div>
-        <footer>
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-12">
-                <div className="copyright-box">
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
       </section>
     );
   }

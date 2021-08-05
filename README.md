@@ -6,6 +6,9 @@
 * `npm run deploy` to deploy to the gh pages branch and update https://rlew631.github.io/portfolio/
 
 ## Task List:
+- redo the site from scratch
+    - use reactstrap instead of bootstrap
+    - get rid of flashy "star" graphics
 
 - [ ] figure out how to speed up load time (especially first load)
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
