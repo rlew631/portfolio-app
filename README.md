@@ -8,7 +8,7 @@
 ## Task List:
 - redo the site from scratch
     - use reactstrap instead of bootstrap
-    - get rid of flashy "star" graphics
+    - trim down flashy "star" graphics
 
 - [ ] figure out how to speed up load time (especially first load)
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
@@ -21,6 +21,7 @@
     - icons for simpleicons and ion icons. Wait until doing both and make single card in collaborative projects
     - CNC router project
     - This website
+    - PresstaMFG
 - [ ] update projects:
     - For the drone project put stuff about control systems in description and start being sure to align keywords in the project descriptions more. Also add a link to one of the youtube videos.
     - For the drone and FSAE cars put in a grabcad link. Make the chrome icon for now if not available but make a grabcad icon for sure. It's not in IonIcons but looks open source and can contribute
@@ -28,7 +29,6 @@
 - [ ] make a set of colored buttons which let you toggle between "all", "electromechanical engineering", and "Data science" categories
 - [ ] in the toolkit add a section for engineering and a section for project management
 - [ ] in project info/portfolio code change "projecttools" to "pythontools" and create a category for more generic/soft skills
-- [ ] fix the x button on the popup window so it's not highlighted by default
 - [ ] see if the entire box can be made to zoom when hovering over, not just the picture. related to modal
 - [ ] add soft skills where relevant. Maybe resource planning, conflict mediation, training etc.
 - [ ] remove the "impacts" section from the drone paper, reread the rest and make sure to update the TOC
