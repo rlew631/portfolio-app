@@ -103,7 +103,7 @@ class About extends React.Component {
                       })}
                       <p></p>
                       <p className="lead">
-                      Currently located in San Francisco, Ryan holds a Bachelor's degree in Mechatronic Engineering. He has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. His passion is for discovering how new technologies can be applied to existing problems in order to find simple and elegant solutions. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!
+                      Currently located in San Francisco, Ryan holds a Bachelor's degree in Robotics Engineering. He has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. His passion is for discovering how new technologies can be applied to find simple and elegant solutions for existing problems. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!
                       </p>
                     </span>
                   </div>
