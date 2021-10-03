@@ -98,7 +98,7 @@ class About extends React.Component {
                     <span>
                       {this.state.about_me.map(content => {
                         return (
-                            <img className="headshot col-md-6" key={content.id} src={content.content}></img>
+                            <img className="headshot col-md-6" alt='headshot' key={content.id} src={content.content}></img>
                         );
                       })}
                       <p></p>
