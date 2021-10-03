@@ -1,5 +1,8 @@
 # React-portfolio
 
+## UPDATE:
+
+added firebase, use `firebase deploy` to deploy to the site, change the domain to forward to it later
 
 ## Commands:
 
