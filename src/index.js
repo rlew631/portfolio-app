@@ -16,8 +16,6 @@ import 'popper.js/dist/popper.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './libs/easing.js';
 
-import * as serviceWorker from './serviceWorker';
-
 //import components
 import Navbar from './components/navbar.jsx';
 import Intro from './components/intro.jsx';
@@ -67,8 +65,3 @@ const App = () => {
     )
 }
 ReactDOM.render(<App />, document.body);
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
