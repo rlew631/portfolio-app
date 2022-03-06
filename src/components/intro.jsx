@@ -19,7 +19,7 @@ class Intro extends React.Component {
                 <strong className="text-slider">
                   <Typed
                     strings={[
-                      "Robotics Engineer, Data Scientist and Developer"
+                      "Robotics / Data Engineer and Developer"
                     ]}
                     typeSpeed={75}
                     backDelay={3000}

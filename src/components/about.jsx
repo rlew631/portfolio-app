@@ -6,7 +6,7 @@ const toolkit = (
 
     <div className="skillset">
       <h2 className="w-title">
-        Data Science/ Machine Learning
+        Data Science / Engineering
       </h2>
       <div className="tools">
         <img className="tool" src="https://img.shields.io/badge/C++%20-brown.svg?&style=for-the-badge&logo=C&logoColor=white" alt="C++"></img>

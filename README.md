@@ -2,7 +2,7 @@
 
 ## UPDATE:
 
-added firebase, use `firebase deploy` to deploy to the site, change the domain to forward to it later
+added firebase, use `npm run build` and `firebase deploy` to deploy to the site, change the domain to forward to it later
 
 ## Commands:
 
@@ -10,6 +10,12 @@ added firebase, use `firebase deploy` to deploy to the site, change the domain t
 * `npm run deploy` to deploy to the gh pages branch and update https://rlew631.github.io/portfolio/
 
 ## Task List:
+- put a horizontal line in the cards that seperates the links/icons from the rest of the text
+
+- the transition where the header loads makes it briefly show a larger height than the final loaded height
+
+- Try to modularize the code for the cards so that it just maps the values from copy.json or wherever they are
+
 - redo the site from scratch
     - use reactstrap instead of bootstrap
     - trim down flashy "star" graphics
