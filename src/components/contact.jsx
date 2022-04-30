@@ -29,7 +29,7 @@ class Contact extends React.Component {
                       <div className="title-box-2">
                         <h5 className="title-left">Send A Message</h5>
                       </div>
-                      <div>
+                      <container>
                         <form
                           action="https://formspree.io/f/xzbkyopb"
                           method="POST"
@@ -69,14 +69,22 @@ class Contact extends React.Component {
                                 <div className="validation"></div>
                               </div>
                             </div>
-                            <div className="col-md-12 mb-3">
-                              <div className="form-group">
-                                <MultiRangeSlider
-                                  min={0}
-                                  max={750}
-                                  onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
-                                />
-                              </div>
+                            <div className="col mr-md-1">
+                              <label className="ml-sm-2" for="inlineFormCustomSelect">Range</label>
+                              <MultiRangeSlider
+                                min={0}
+                                max={750}
+                                onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
+                              />
+                            </div>
+                            <div className="col-md-4 mb-3">
+                              <label className="ml-sm-2" for="inlineFormCustomSelect">Preference</label>
+                              <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option selected>Choose...</option>
+                                <option value="1">In-Person</option>
+                                <option value="2">Flex</option>
+                                <option value="3">Remote</option>
+                              </select>
                             </div>
                             <div className="col-md-12 mb-3">
                               <div className="form-group">
@@ -111,7 +119,7 @@ class Contact extends React.Component {
                             </div>
                           </div>
                         </form>
-                      </div>
+                      </container>
                     </div>
                     <div className="col-md-5">
                       <div className="title-box-2 pt-4 pt-md-0">

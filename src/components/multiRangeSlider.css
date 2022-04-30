@@ -1,3 +1,7 @@
+.slider-container {
+  margin-top: 8px
+}
+
 .slider {
   position: relative;
   /* width: 200px; */
@@ -31,7 +35,7 @@
 .slider__right-value {
   color: #4e4e4e;;
   font-size: 12px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .slider__left-value {
@@ -53,22 +57,80 @@
   pointer-events: none;
   position: absolute;
   height: 0;
-  /* width: 200px; */
   outline: none;
 }
 
 .thumb--zindex-3 {
   z-index: 3;
-  width: 90%;
 }
 
 .thumb--zindex-4 {
   z-index: 4;
-  width: 90%;
 }
 
 .thumb--zindex-5 {
   z-index: 5;
+}
+
+/* screen size nonsense */
+
+/* for extra small screen sizes */
+@media only screen and (max-width: 350px) {
+  .thumb--zindex-3,
+  .thumb--zindex-4 {
+    width: 85%;
+  }
+  .slider-container {
+    padding-right: 10px;
+    margin-bottom: 50px;
+    margin-left: -15px;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 576px) {
+  .thumb--zindex-3,
+  .thumb--zindex-4 {
+    width: 85%;
+  }
+  .slider-container {
+    margin-bottom: 50px;
+    margin-left: -5px;
+  }
+}
+
+/* for small screen sizes */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .thumb--zindex-3,
+  .thumb--zindex-4 {
+    width: 90%;
+  }
+  .slider-container {
+    margin-bottom: 50px;
+    margin-left: -5px;
+  }
+}
+
+/* for medium screen sizes */
+@media only screen and (min-width: 768px) and (max-width: 992px){
+  .thumb--zindex-3,
+  .thumb--zindex-4 {
+    width: 80%;
+  }
+  .slider-container {
+    margin-bottom: 50px;
+    margin-left: -5px;
+  }
+}
+
+/* for large screen sizes */
+@media only screen and (min-width: 992px) {
+  .thumb--zindex-3,
+  .thumb--zindex-4 {
+    width: 85%;
+  }
+  .slider-container {
+    margin-bottom: 50px;
+    margin-left: -5px;
+  }
 }
 
 /* For Chrome browsers */
