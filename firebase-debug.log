@@ -85,3 +85,48 @@
     at async /usr/local/lib/node_modules/firebase-tools/lib/command.js:188:17
 [error] 
 [error] Error: Failed to get Firebase project ryanlewisengineering-144d6. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-04-30T01:33:47.072Z] ----------------------------------------------------------------------
+[debug] [2022-04-30T01:33:47.075Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-30T01:33:47.075Z] CLI Version:   9.19.0
+[debug] [2022-04-30T01:33:47.075Z] Platform:      darwin
+[debug] [2022-04-30T01:33:47.075Z] Node Version:  v14.18.0
+[debug] [2022-04-30T01:33:47.076Z] Time:          Fri Apr 29 2022 18:33:47 GMT-0700 (Pacific Daylight Time)
+[debug] [2022-04-30T01:33:47.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-30T01:33:47.080Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-04-30T01:33:47.172Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-30T01:33:47.172Z] > authorizing via signed-in user (ryan@getpressta.com)
+[debug] [2022-04-30T01:33:47.173Z] [iam] checking project ryanlewisengineering-144d6 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-30T01:33:47.174Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-04-30T01:33:47.175Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-30T01:33:47.347Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 30 Apr 2022 01:33:47 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-30T01:33:47.399Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ryanlewisengineering-144d6:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-30T01:33:47.407Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-04-30T01:33:47.408Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2022-04-30T01:33:47.635Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 30 Apr 2022 01:33:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=137","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-30T01:33:47.637Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project ryanlewisengineering-144d6:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2022-04-30T01:33:47.638Z] > refreshing access token with scopes: []
+[debug] [2022-04-30T01:33:47.639Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-04-30T01:33:47.733Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Sat, 30 Apr 2022 01:33:47 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-04-30T01:33:47.788Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ryanlewisengineering-144d6 [none]
+[debug] [2022-04-30T01:33:48.042Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ryanlewisengineering-144d6 403
+[debug] [2022-04-30T01:33:48.042Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ryanlewisengineering-144d6 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-04-30T01:33:48.043Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-04-30T01:33:48.044Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (/usr/local/lib/node_modules/firebase-tools/lib/responseToError.js:38:12)
+    at Client.doRequest (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:96:20)
+    at async Object.getFirebaseProject (/usr/local/lib/node_modules/firebase-tools/lib/management/projects.js:290:21)
+    at async Object.getDefaultHostingSite (/usr/local/lib/node_modules/firebase-tools/lib/getDefaultHostingSite.js:8:21)
+    at async requireHostingSite (/usr/local/lib/node_modules/firebase-tools/lib/requireHostingSite.js:9:18)
+    at async Object.fn (/usr/local/lib/node_modules/firebase-tools/lib/commands/deploy.js:65:9)
+    at async /usr/local/lib/node_modules/firebase-tools/lib/command.js:188:17
+[error] 
+[error] Error: Failed to get Firebase project ryanlewisengineering-144d6. Please make sure the project exists and your account has permission to access it.
