@@ -1,4 +1,5 @@
 import React from "react";
+import MultiRangeSlider from "./multiRangeSlider";
 import imageOverlay from "../img/earth.jpg";
 
 class Contact extends React.Component {
@@ -66,6 +67,15 @@ class Contact extends React.Component {
                                   data-msg="Please enter a valid email"
                                 />
                                 <div className="validation"></div>
+                              </div>
+                            </div>
+                            <div className="col-md-12 mb-3">
+                              <div className="form-group">
+                                <MultiRangeSlider
+                                  min={0}
+                                  max={750}
+                                  onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
+                                />
                               </div>
                             </div>
                             <div className="col-md-12 mb-3">
