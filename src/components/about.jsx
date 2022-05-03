@@ -23,7 +23,7 @@ const toolkit = (
       </div>
     </div>
 
-    <div classname="skillset">
+    <div className="skillset">
       <h2 className="w-title">
         Web Development
       </h2>
@@ -44,7 +44,7 @@ const toolkit = (
       </div>
     </div>
 
-    <div classname="skillset">
+    <div className="skillset">
       <h2 className="w-title">
         Operating Systems
       </h2>
@@ -55,7 +55,7 @@ const toolkit = (
       </div>
     </div>
 
-    <div classname="skillset">
+    <div className="skillset">
       <h2 className="w-title">
         Embedded Systems
       </h2>
