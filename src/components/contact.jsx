@@ -130,43 +130,6 @@ class Contact extends React.Component {
                           If you'd like to check out some of my other work or chat about a project or just say "hello" feel free to visit my YouTube channel, GitHub or add me on LinkedIn.
                         </p>
                       </div>
-                      <div className="socials">
-                        <ul>
-                          <li>
-                            <a
-                              href="https://www.youtube.com/channel/UCL4U7uB704X1u2oZwXxSBDw"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-youtube"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://github.com/rlew631"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-github"></i>
-                              </span>
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              href="https://www.linkedin.com/in/rlew631/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <span className="ico-circle">
-                                <i className="ion-social-linkedin"></i>
-                              </span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
                     </div>
                   </div>
                 </div>
