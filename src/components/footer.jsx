@@ -2,7 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import '../libs/easing.js'
 
-class BackToTop extends React.Component {
+class Footer extends React.Component {
     componentDidMount(){
         $('.back-to-top').click(function(){
             $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
@@ -21,10 +21,14 @@ class BackToTop extends React.Component {
     }
 
     render(){
-        return <a href="#" className="back-to-top animated"><i className="fa fa-chevron-up"></i></a>;
+        return(
+            <a href="#" className="back-to-top animated">
+                <i className="fa fa-chevron-up"></i>
+            </a>
+        );
     }
 }
 
-export default BackToTop;
+export default Footer;
 
 
