@@ -22,9 +22,11 @@ class Footer extends React.Component {
 
     render(){
         return(
-            <a href="#" className="back-to-top animated">
-                <i className="fa fa-chevron-up"></i>
-            </a>
+            <div className="footer animated">
+                <a href="#" className="back-to-top animated">
+                    <i className="fa fa-chevron-up"></i>
+                </a>
+            </div>
         );
     }
 }
