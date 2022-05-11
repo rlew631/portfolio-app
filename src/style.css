@@ -195,6 +195,15 @@ a:hover {
 
 .socials {
   padding: 1.5rem 0;
+  position: fixed;
+  /* width: 44px;
+  height: 44px; */
+  /* text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%; */
+  right: 15px;
+  bottom: 15px;
 }
 
 .socials ul li {
@@ -317,7 +326,6 @@ a:hover {
 
 .back-to-top {
   position: fixed;
-  display: none;
   background: #0078ff;
   color: #fff;
   width: 44px;
@@ -329,7 +337,6 @@ a:hover {
   left: 15px;
   bottom: 15px;
   transition: background 0.5s;
-  z-index: 11;
 }
 
 .back-to-top i {
@@ -842,6 +849,11 @@ footer {
   text-align: center;
   color: #fff;
   padding-bottom: 4rem;
+  z-index: 30;
+}
+
+.footer-animated {
+  display: none;
 }
 
 footer .copyright {

@@ -112,7 +112,7 @@ class Contact extends React.Component {
                           If you'd like to check out some of my other work or chat about a project or just say "hello" feel free to visit my YouTube channel, GitHub or add me on LinkedIn.
                         </p>
                       </div>
-                      <div className="socials">
+                      {/* <div className="socials">
                         <ul>
                           <li>
                             <a
@@ -148,7 +148,7 @@ class Contact extends React.Component {
                             </a>
                           </li>
                         </ul>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
