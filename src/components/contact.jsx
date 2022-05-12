@@ -6,15 +6,16 @@ function TabGroup() {
   const [active, setActive] = useState(types[0]);
   return (
     <>
-      <div className="button-group">
+      <div className="button-group tablinks">
         {types.map(type => (
           <div
             className={type + " button-tab col-6" + (type === active ? " highlighted-class-name" : "" )}
             key={type}
             active={active === type}
             onClick={
-              () => {
+              (event) => {
                 setActive(type);
+                showForm(event, type);
               }
             }
           >
@@ -23,9 +24,21 @@ function TabGroup() {
         ))}
       </div>
       <p />
-      <p> Your payment selection: {active} </p>
     </>
   );
+}
+function showForm(evt, formName) {
+  // Declare all variables
+  var i, tabcontent;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Show the current tab content
+  document.getElementById(formName).style.display = "block";
 }
 
 class Contact extends React.Component {
@@ -51,7 +64,7 @@ class Contact extends React.Component {
               <h5 className="title-left">Send A Message</h5>
             </div>
             <TabGroup/>
-            <div>
+            <div id="General Inquiry" className="tabcontent">
               <form
                 action="https://formspree.io/f/xzbkyopb"
                 method="POST"
@@ -124,6 +137,9 @@ class Contact extends React.Component {
                   </div>
                 </div>
               </form>
+            </div>
+            <div id="Work Opportunities" className="tabcontent" style={{display: "none"}}>
+              hahahaha
             </div>
           </div>
         </div>
