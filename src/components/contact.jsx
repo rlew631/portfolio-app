@@ -17,10 +17,14 @@ function TabGroup() {
       <div className="button-group">
         {types.map(type => (
           <div
-            className="button-tab"
+            className={type + " button-tab" + (type === active ? "highlighted-class-name" : "" )}
             key={type}
             active={active === type}
-            onClick={() => setActive(type)}
+            onClick={
+              () => {
+                setActive(type);
+              }
+            }
           >
             {type}
           </div>
