@@ -4,7 +4,7 @@ import '../libs/easing.js'
 
 class Footer extends React.Component {
     componentDidMount(){
-        $('.footer-animated').click(function(){
+        $('.back-to-top').click(function(){
             $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
             return false;
         });
@@ -22,7 +22,7 @@ class Footer extends React.Component {
 
     render(){
         return(
-            <div className="footer animated footer-animated">
+            <div className="footer animated footer-animated" style={{zIndex: 20}}>
                 <div>
                     <a href="#" className="back-to-top animated">
                         <i className="fa fa-chevron-up"></i>

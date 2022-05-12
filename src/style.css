@@ -194,14 +194,7 @@ a:hover {
 /* Socials */
 
 .socials {
-  padding: 1.5rem 0;
   position: fixed;
-  /* width: 44px;
-  height: 44px; */
-  /* text-align: center;
-  line-height: 1;
-  font-size: 16px;
-  border-radius: 50%; */
   right: 15px;
   bottom: 15px;
 }
@@ -217,14 +210,22 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
   transition: all 500ms ease;
+  /* box-shadow: 0 0 0 3px #0078ff;
+  background-color: #fff;
+  color: #000000; */
+  box-shadow: 0 0 0 3px #0078ff;
+  background-color: #0078ff;
+  color: #fff;
 }
 
 .socials .ico-circle:hover {
+  box-shadow: 0 0 0 3px #0078ff;
+  background-color: #fff;
+  color: #000000;
+  /* box-shadow: 0 0 0 3px #cde1f8;
   background-color: #0078ff;
-  color: #fff;
-  box-shadow: 0 0 0 3px #cde1f8;
+  color: #fff; */
   transition: all 500ms ease;
 }
 
@@ -849,10 +850,11 @@ footer {
   text-align: center;
   color: #fff;
   padding-bottom: 4rem;
-  z-index: 30;
+  z-index: 20;
 }
 
 .footer-animated {
+  position: fixed;
   display: none;
 }
 
