@@ -4,6 +4,7 @@ import MultiRangeSlider from './multiRangeSlider.jsx';
 
 const types = ['General Inquiry', 'Work Opportunities'];
 function TabGroup() {
+  // creating the tab group
   const [active, setActive] = useState(types[0]);
   return (
     <>
@@ -29,7 +30,8 @@ function TabGroup() {
   );
 }
 function showForm(evt, formName) {
-  // Declare all variables
+  // code for showing the content when the tab is selected
+
   var i, tabcontent;
 
   // Get all elements with class="tabcontent" and hide them
@@ -37,7 +39,6 @@ function showForm(evt, formName) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
   // Show the current tab content
   document.getElementById(formName).style.display = "block";
 }
@@ -188,7 +189,7 @@ class Contact extends React.Component {
                     />
                   </div>
                   <div className="col-md-4 mb-3">
-                    <label className="ml-sm-2" for="inlineFormCustomSelect">Location</label>
+                    <label className="form-group ml-sm-2" for="inlineFormCustomSelect">Location</label>
                     <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
                       <option selected>Choose...</option>
                       <option value="1">In-Person</option>
@@ -221,7 +222,9 @@ class Contact extends React.Component {
       </section>
     );
   }
+
   submitForm(ev) {
+    // this looks like it's the actual code that runs when the "submit" button is pushed
     ev.preventDefault();
     const form = ev.target;
     const data = new FormData(form);

@@ -846,11 +846,15 @@ CONTACT
   background: white;
   border: 0;
   outline: 0;
+  border-bottom: 3px solid #4e4e4e;
 }
 
 .highlighted-class-name {
   border-bottom: 3px solid #0078ff;
   opacity: 1;
+  box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
 }
 
 .footer-paralax {

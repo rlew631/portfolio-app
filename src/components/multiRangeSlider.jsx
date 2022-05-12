@@ -47,9 +47,10 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
   }, [minVal, maxVal, onChange]);
 
   return (
-    <div className="container slider-container">
+    <div className="container slider-container form-group">
       <input
         type="range"
+        name="rangemin"
         min={min}
         max={max}
         value={minVal}
@@ -60,11 +61,13 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
           event.target.value = value.toString();
         }}
         className={classnames("thumb thumb--zindex-3", {
+        // className={classnames("thumb thumb--zindex-3 form-control", {
           "thumb--zindex-5": minVal > max - 100
         })}
       />
       <input
         type="range"
+        name="rangemax"
         min={min}
         max={max}
         value={maxVal}
@@ -75,6 +78,7 @@ const MultiRangeSlider = ({ min, max, onChange }) => {
           event.target.value = value.toString();
         }}
         className="thumb thumb--zindex-4"
+        // className="thumb thumb--zindex-4 form-control"
       />
 
       <div className="slider">
