@@ -834,6 +834,25 @@ TESTIMONIALS
 CONTACT
 */
 
+.button-group {
+  display: flex;
+}
+
+.button-tab {
+  font-size: 20px;
+  padding: 10px 60px;
+  cursor: pointer;
+  opacity: 0.6;
+  background: white;
+  border: 0;
+  outline: 0;
+}
+
+.button-tab.active {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+
 .footer-paralax {
   padding: 4rem 0;
 }

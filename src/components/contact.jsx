@@ -1,5 +1,36 @@
-import React from "react";
+import React, { useState } from 'react';
 import imageOverlay from "../img/earth.jpg";
+// const Tab = styled.button`
+//   ${({ active }) =>
+//     active &&
+//     `
+//     border-bottom: 2px solid black;
+//     opacity: 1;
+//   `}
+// `;
+
+const types = ['Cash', 'Credit Card', 'Bitcoin'];
+function TabGroup() {
+  const [active, setActive] = useState(types[0]);
+  return (
+    <>
+      <div className="button-group">
+        {types.map(type => (
+          <div
+            className="button-tab"
+            key={type}
+            active={active === type}
+            onClick={() => setActive(type)}
+          >
+            {type}
+          </div>
+        ))}
+      </div>
+      <p />
+      <p> Your payment selection: {active} </p>
+    </>
+  );
+}
 
 class Contact extends React.Component {
   constructor(props) {
@@ -23,6 +54,7 @@ class Contact extends React.Component {
             <div className="title-box-2">
               <h5 className="title-left">Send A Message</h5>
             </div>
+            <TabGroup/>
             <div>
               <form
                 action="https://formspree.io/f/xzbkyopb"
