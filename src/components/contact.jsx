@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import imageOverlay from "../img/earth.jpg";
+import MultiRangeSlider from './multiRangeSlider.jsx';
 
 const types = ['General Inquiry', 'Work Opportunities'];
 function TabGroup() {
@@ -178,19 +179,22 @@ class Contact extends React.Component {
                       <div className="validation"></div>
                     </div>
                   </div>
-                  <div className="col-md-12 mb-3">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        className="form-control"
-                        name="_subject"
-                        id="subject"
-                        placeholder="Subject"
-                        data-rule="minlen:4"
-                        data-msg="Please enter at least 8 chars"
-                      />
-                      <div className="validation"></div>
-                    </div>
+                  <div className="col mr-md-1">
+                    <label className="ml-sm-2" for="inlineFormCustomSelect">Range</label>
+                    <MultiRangeSlider
+                      min={0}
+                      max={750}
+                      onChange={({ min, max }) => console.log(`min = ${min}, max = ${max}`)}
+                    />
+                  </div>
+                  <div className="col-md-4 mb-3">
+                    <label className="ml-sm-2" for="inlineFormCustomSelect">Location</label>
+                    <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                      <option selected>Choose...</option>
+                      <option value="1">In-Person</option>
+                      <option value="2">Flex</option>
+                      <option value="3">Remote</option>
+                    </select>
                   </div>
                   <div className="col-md-12 mb-3">
                     <div className="form-group">
