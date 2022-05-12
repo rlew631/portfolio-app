@@ -1,15 +1,7 @@
 import React, { useState } from 'react';
 import imageOverlay from "../img/earth.jpg";
-// const Tab = styled.button`
-//   ${({ active }) =>
-//     active &&
-//     `
-//     border-bottom: 2px solid black;
-//     opacity: 1;
-//   `}
-// `;
 
-const types = ['Cash', 'Credit Card', 'Bitcoin'];
+const types = ['General Inquiry', 'Work Opportunities'];
 function TabGroup() {
   const [active, setActive] = useState(types[0]);
   return (
@@ -17,7 +9,7 @@ function TabGroup() {
       <div className="button-group">
         {types.map(type => (
           <div
-            className={type + " button-tab" + (type === active ? "highlighted-class-name" : "" )}
+            className={type + " button-tab col-6" + (type === active ? " highlighted-class-name" : "" )}
             key={type}
             active={active === type}
             onClick={

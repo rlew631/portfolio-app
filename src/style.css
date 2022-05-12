@@ -839,7 +839,7 @@ CONTACT
 }
 
 .button-tab {
-  font-size: 20px;
+  font-size: 16px;
   padding: 10px 60px;
   cursor: pointer;
   opacity: 0.6;
@@ -848,8 +848,8 @@ CONTACT
   outline: 0;
 }
 
-.button-tab.active {
-  border-bottom: 2px solid black;
+.highlighted-class-name {
+  border-bottom: 3px solid #0078ff;
   opacity: 1;
 }
 
