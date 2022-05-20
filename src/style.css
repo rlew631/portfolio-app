@@ -847,6 +847,7 @@ CONTACT
   border: 0;
   outline: 0;
   border-bottom: 3px solid #4e4e4e;
+  text-align: center;
 }
 
 .highlighted-class-name {

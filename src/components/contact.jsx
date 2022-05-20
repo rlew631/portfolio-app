@@ -181,7 +181,7 @@ class Contact extends React.Component {
                     </div>
                   </div>
                   <div className="col mr-md-1">
-                    <label className="ml-sm-2" for="inlineFormCustomSelect">Range</label>
+                    <label className="ml-sm-2" for="inlineFormCustomSelect">Salary Range</label>
                     <MultiRangeSlider
                       min={0}
                       max={750}
@@ -190,7 +190,10 @@ class Contact extends React.Component {
                   </div>
                   <div className="col-md-4 mb-3">
                     <label className="form-group ml-sm-2" for="inlineFormCustomSelect">Location</label>
-                    <select className="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <select className="custom-select mr-sm-2"
+                    id="inlineFormCustomSelect"
+                    type="number"
+                    data-msg="Please select an option">
                       <option selected>Choose...</option>
                       <option value="1">In-Person</option>
                       <option value="2">Flex</option>
