@@ -1090,6 +1090,7 @@ BUTTON
   top: 15px;
   border-radius: 15px;
   border: 1px solid #000000;
+  padding-bottom: 4px;
 }
 
 .modal1 > .container > .content {

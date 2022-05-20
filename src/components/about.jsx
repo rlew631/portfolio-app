@@ -20,6 +20,8 @@ const toolkit = (
         <img className="tool" src="https://img.shields.io/badge/TensorFlow%20-%23430098.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow"></img>
 
         <img className="tool" src="https://img.shields.io/badge/Jupyter%20-%23F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" alt="Jupyter"></img>
+        <img className="tool" src="https://img.shields.io/badge/Terraform%20-%237B42BC.svg?&style=for-the-badge&logo=Terraform&logoColor=white" alt="Terraform"></img>
+        {/* format is .../badge/<icon from https://simpleicons.org/>%20-23<hex code for background color>.svg..... */}
       </div>
     </div>
 
@@ -37,6 +39,7 @@ const toolkit = (
         <img className="tool" src="https://img.shields.io/badge/Streamlit%20-%23FF4B4B.svg?&style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit"></img>
         <img className="tool" src="https://img.shields.io/badge/git%20-%23F05033.svg?&style=for-the-badge&logo=git&logoColor=white" alt="Git"></img>
         <img className="tool" src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="Github"></img>
+        <img className="tool" src="https://img.shields.io/badge/google%20cloud%20-%234285F4.svg?&style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud"></img>
         
         <img className="tool" src="https://img.shields.io/badge/-PostgreSQL-336791?style=for-the-badge&logo=PostgreSQL" alt="PostGresQL"></img>
         <img className="tool" src="https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white" alt="MySQL"></img>
@@ -103,7 +106,7 @@ class About extends React.Component {
                       })}
                       <p></p>
                       <p className="lead">
-                      Currently located in San Francisco, Ryan holds a Bachelor's degree in Robotics Engineering. He has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. His passion is for discovering how new technologies can be applied to find simple and elegant solutions for existing problems. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!
+                      Currently located in San Francisco, Ryan has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. He also holds a Bachelor's degree in Robotics Engineering and his passion is for discovering how new technologies can be applied to find simple and elegant solutions for existing problems. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!
                       </p>
                     </span>
                   </div>

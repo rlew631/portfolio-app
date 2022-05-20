@@ -2,7 +2,7 @@
 
 ## UPDATE:
 
-added firebase, use `npm run build` and `firebase deploy` to deploy to the site, change the domain to forward to it later
+added firebase, use `npm run build` and `firebase deploy` to deploy to the site, __change the domain to forward to it later__
 
 ## Commands:
 
@@ -15,10 +15,6 @@ added firebase, use `npm run build` and `firebase deploy` to deploy to the site,
 - the transition where the header loads makes it briefly show a larger height than the final loaded height
 
 - Try to modularize the code for the cards so that it just maps the values from copy.json or wherever they are
-
-- redo the site from scratch
-    - use reactstrap instead of bootstrap
-    - trim down flashy "star" graphics
 
 - [ ] figure out how to speed up load time (especially first load)
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
