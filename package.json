@@ -2,47 +2,23 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rlew631.github.io/",
-  "dependencies": {
-    "bootstrap": "^4.5.3",
-    "firebase": "^9.1.1",
-    "firebase-tools": "^9.19.0",
-    "jquery": "^3.5.1",
-    "node-sass": "^4.14.1",
-    "normalize.css": "^8.0.1",
-    "popper.js": "^1.16.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-lazyload": "^3.1.0",
-    "react-scripts": "^3.4.4",
-    "react-typed": "^1.2.0",
-    "reactjs-popup": "^2.0.4",
-    "typed.js": "^2.0.11"
-  },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "jquery": "^3.6.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-typed": "^1.2.0",
+    "reactjs-popup": "^2.0.5",
+    "sass": "^1.60.0"
   }
 }

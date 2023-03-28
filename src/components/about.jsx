@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "../img/Ryan.png";
+import Image from 'next/image'
 
 const toolkit = (
   <div className="toolkit">
@@ -79,7 +79,7 @@ class About extends React.Component {
 
         {
           id: "headshot",
-          content: headshot
+          content: "img/ryan.png"
         }
 
       ]
@@ -101,7 +101,7 @@ class About extends React.Component {
                     <span>
                       {this.state.about_me.map(content => {
                         return (
-                            <img className="headshot col-md-6" alt='headshot' key={content.id} src={content.content}></img>
+                            <img className="headshot col-md-6" alt='headshot' src="/ryan.png"></img>
                         );
                       })}
                       <p></p>

@@ -1,5 +1,6 @@
 import React from "react";
-import imageOverlay from "../img/earth.jpg";
+// import imageOverlay from "../img/earth.jpg";
+import Image from 'next/image'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class Contact extends React.Component {
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{ backgroundImage: "url(" + imageOverlay + ")" }}
+        style={{ backgroundImage: "url(" + "/img/earth.jpg" + ")" }}
       >
         <div className="overlay-mf"></div>
         <div className="container">

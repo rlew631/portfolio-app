@@ -1,14 +1,16 @@
 import React from "react";
 import Popup from "reactjs-popup";
 
-import map from "../img/map.png";
-import dna from "../img/dna.png";
-import minicity from "../img/minicity.png";
-import audio from "../img/audio.png"
-import drone from "../img/drone_cad.png";
-import stocks from "../img/stocks.png";
-import fsae from "../img/fsae.jpg";
-import ecu from "../img/ecu.png";
+
+import Image from 'next/image'
+// import map from "../img/map.png";
+// import dna from "../img/dna.png";
+// import minicity from "../img/minicity.png";
+// import audio from "../img/audio.png"
+// import drone from "../img/drone_cad.png";
+// import stocks from "../img/stocks.png";
+// import fsae from "../img/fsae.jpg";
+// import ecu from "../img/ecu.png";
 
 
 import ProjectInfo from "../components/project-info.json"
@@ -37,7 +39,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.CarProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={minicity} alt={ProjectInfo.CarProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/minicity.png"} alt={ProjectInfo.CarProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -82,7 +84,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.DrugProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={dna} alt={ProjectInfo.DrugProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/dna.png"} alt={ProjectInfo.DrugProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -131,7 +133,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.NLPProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={stocks} alt={ProjectInfo.NLPProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/stocks.png"} alt={ProjectInfo.NLPProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -175,7 +177,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.DroneProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={drone} alt={ProjectInfo.DroneProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/drone_cad.png"} alt={ProjectInfo.DroneProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -220,7 +222,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.PlanktonProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={map} alt={ProjectInfo.PlanktonProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/map.png"} alt={ProjectInfo.PlanktonProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -262,7 +264,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.SpeechProject.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={audio} alt={ProjectInfo.SpeechProject.ProjectTitle} className="img-fluid" />
+                    <img src={"img/audio.png"} alt={ProjectInfo.SpeechProject.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -304,7 +306,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.FSAE.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={fsae} alt={ProjectInfo.FSAE.ProjectTitle} className="img-fluid" />
+                    <img src={"img/fsae.jpg"} alt={ProjectInfo.FSAE.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
@@ -351,7 +353,7 @@ class Portfolio extends React.Component {
                 <h2 className="w-title">{ProjectInfo.Subaru.ProjectTitle}</h2>
                 <Popup trigger={
                   <button className="work-img">
-                    <img src={ecu} alt={ProjectInfo.Subaru.ProjectTitle} className="img-fluid" />
+                    <img src={"img/ecu.png"} alt={ProjectInfo.Subaru.ProjectTitle} className="img-fluid" />
                   </button>} modal nested>
                   {close => (
                     <div className="modal1"> 
