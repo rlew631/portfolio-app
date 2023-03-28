@@ -24,41 +24,40 @@ class Navbar extends React.Component {
         $("#mainNav").addClass("navbar-reduce");
       }
     });
-    useEffect(() => { // https://stackoverflow.com/questions/60629258/next-js-document-is-not-defined
-      var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-        target: '#mainNav'
-      })
-    }, [])
-    // $("body").scrollspy({
-    //   target: "#mainNav",
-    //   offset: navHeight
-    // });
-    //https://stackoverflow.com/questions/54138480/bootstrap-scrollspy-not-working-scrollspy-is-not-a-function
+    // useEffect(() => { // https://stackoverflow.com/questions/60629258/next-js-document-is-not-defined
+    //   var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    //     target: '#mainNav'
+    //   })
+    // }, [])
+    $("body").scrollspy({
+      target: "#mainNav",
+      offset: navHeight
+    });
+    https://stackoverflow.com/questions/54138480/bootstrap-scrollspy-not-working-scrollspy-is-not-a-function
 
     $(".js-scroll").on("click", function() {
       $(".navbar-collapse").collapse("hide");
     });
-    useEffect(() => {
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 50) {
-          document
-            .querySelector(".navbar-expand-md")
-            .classList.add("navbar-reduce");
-          document
-            .querySelector(".navbar-expand-md")
-            .classList.remove("navbar-trans");
-          this.setState({ logo: "img/rl.png" });
-        } else {
-          document
-            .querySelector(".navbar-expand-md")
-            .classList.add("navbar-trans");
-          document
-            .querySelector(".navbar-expand-md")
-            .classList.remove("navbar-reduce");
-          this.setState({ logo: logo1 });
-        }
-      });
-    }, [])
+
+    window.addEventListener("scroll", () => {
+      if (window.pageYOffset > 50 && process.browser) {
+        document
+          .querySelector(".navbar-expand-md")
+          .classList.add("navbar-reduce");
+        document
+          .querySelector(".navbar-expand-md")
+          .classList.remove("navbar-trans");
+        this.setState({ logo: "img/rl.png" });
+      } else {
+        document
+          .querySelector(".navbar-expand-md")
+          .classList.add("navbar-trans");
+        document
+          .querySelector(".navbar-expand-md")
+          .classList.remove("navbar-reduce");
+        this.setState({ logo: logo1 });
+      }
+    });
 
     $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function() {
       if (
