@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <main className={styles.main}>
         <Navbar />
-        <Intro />
+        {/* <Intro /> */}
         <About />
         <Portfolio />
         <Contact />

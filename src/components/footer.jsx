@@ -2,6 +2,8 @@ import React from 'react';
 import $ from 'jquery';
 // import '../libs/easing.js'
 
+import 'bootstrap/dist/css/bootstrap.css'
+
 class Footer extends React.Component {
     componentDidMount(){
         $('.back-to-top').click(function(){

@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+// import '@/styles/globals.css'
+import '@/styles/style.css'
 import "@/styles/stars.scss";
 
 import 'bootstrap/dist/css/bootstrap.css'
