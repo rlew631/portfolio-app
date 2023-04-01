@@ -2,6 +2,9 @@ import '@/styles/globals.css'
 import "@/styles/stars.scss";
 
 import 'bootstrap/dist/css/bootstrap.css'
+// import "bootstrap"
+import $ from "jquery";
+
 
 import Script from "next/script";
 
@@ -26,6 +29,7 @@ export default function App({ Component, pageProps }) {
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"
       />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"/>
       <Component {...pageProps} />
     </>
     )
