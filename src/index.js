@@ -25,18 +25,6 @@ import Contact from './components/contact.jsx';
 import Footer from './components/footer.jsx';
 import Preloader from './components/preloader';
 
-
-// ReactDOM.render(
-//     <React.Fragment>
-//         <Navbar />
-//         <Intro />
-//         <About />
-//         <Portfolio />
-//         <Contact />
-//         <BackToTop />
-//         <Preloader />
-//     </React.Fragment>,
-// document.getElementById('root'));
 const App = () => {
     return (
         <div className="list">
