@@ -1,4 +1,5 @@
 import React from 'react';
+import icons from './icons.json'
 
 function Chevron(props){
     return(
@@ -76,9 +77,9 @@ class Footer extends React.Component {
                 </div>
                 <div className="socials">
                     <ul>
-                        <Socials SVGData={this.youtubeSVG} url="https://www.youtube.com/channel/UCL4U7uB704X1u2oZwXxSBDw"/>
-                        <Socials SVGData={this.githubSVG} url="https://github.com/rlew631"/>
-                        <Socials SVGData={this.linkedinSVG} url="https://www.linkedin.com/in/rlew631/"/>
+                        <Socials SVGData={icons.youtubeSVG} url="https://www.youtube.com/channel/UCL4U7uB704X1u2oZwXxSBDw"/>
+                        <Socials SVGData={icons.githubSVG} url="https://github.com/rlew631"/>
+                        <Socials SVGData={icons.linkedinSVG} url="https://www.linkedin.com/in/rlew631/"/>
                     </ul>
                 </div>
             </div>

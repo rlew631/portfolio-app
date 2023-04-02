@@ -1,0 +1,108 @@
+{
+"CarProject":{
+  "ProjectTitle":"Training Autonomous Vehicles using RL",
+  "Image":"img/minicity.png",
+  "Tools":[
+    {"title":"Python Tools:", "text":"FLOW, RLlib, OpenAI Gym, SUMO, OpenStreetMaps, Tensorflow"}
+  ],
+  "Links":[
+    {"site": "youtube", "url":"https://youtu.be/qXuBEs9G7Iw"},
+    {"site": "github", "url":"https://github.com/rlew631/AutonomousVehicleSimulation"}
+  ],
+  "PopupText":[
+    "The purpose of this project was to create a model which develops autonomous vehicle driving policies using a deep reinforcement learning policy. See my discussion on youtube or the slide deck in the repo which goes over the general framework and the tools used."
+  ]
+},
+"DrugProject":{
+  "ProjectTitle":"Predicting Drug Effects from their Chemical Markers",
+  "Image":"img/dna.png",
+  "Tools":[
+    {"title":"Python Tools:","text":"SKLearn, IMBLearn, MatPlotLib, Plotly, Seaborn"},
+    {"title":"Other Tools:","text":"Heroku, HTML, JavaScript, CSS"}
+  ],
+  "Links":[
+    {"site":"github", "url":"https://github.com/rlew631/DrugMethodsOfAction"}
+  ],
+  "PopupText":[
+    "The purpose of this project was to find a relationship between drug attributes and their corresponding methods of action. This could improve the efficiency of the drug development process by selectively eliminating drug candidates which are likely to have additional unwanted MOAs (mechanisms of action) before moving on to the screening and preclinical trial phases of development."
+  ]
+},
+"NLPProject":{
+  "ProjectTitle":"Comparing Stock Performance to Annual Filings using NLP",
+  "Image":"img/stocks.png",
+  "Tools":[{"title":"Python Tools:","text":"NLTK, BeautifulSoup, Matplotlib, Pandas"}],
+  "Links":[
+    {"site":"github","url":"https://github.com/rlew631/NLP_stock_analysis"}
+  ],
+  "PopupText":[
+    "This project is a continuation of the Lazy Prices paper published by Lauren Cohen of HBS which speculated that a magnitude of changes in the content of a company's quarterly filing would indicate that their stock is likely to drop.",
+    "My implementation compares the cosine similarity and jaccard score of a given company's filing to the one they filed the previous year. Additionally I wrote a custom sentiment index which uses Loughran McDonald's financial NLP dictionary to determine the overall sentiment of a given year's filing."
+  ]
+},
+"DroneProject":{
+  "ProjectTitle":"Object Tracking Drone",
+  "Image":"img/drone_cad.png",
+  "Tools":[
+    {"title":"Python Tools:", "text":"OpenCV, MAVLink"},
+    {"title":"Other Tools:", "text":"CNC (G-Code), Solidworks, FEA (Finite Element Analysis), PID, Linux"}
+  ],
+  "Links":[
+    {"site":"github","url":"https://github.com/rlew631/ObjectTrackingDrone"}
+  ],
+  "PopupText":[
+    "This project involved building a custom drone and using OpenCV on a Raspberry Pi to perform object tracking."
+  ]
+},
+"PlanktonProject":{
+  "ProjectTitle":"Predicting Zooplankton Presence from Water Quality Data",
+  "Image":"img/map.png",
+  "Tools":[
+    {"title":"Python Tools:","text":"SKLearn, Numpy, Pandas, MatPlotLib, Seaborn"}
+  ],
+  "Links":[
+    {"site":"github","url":"https://github.com/rlew631/SanJoaquinZooplanktonPredictor"}
+  ],
+  "PopupText":[
+    "The purpose of this project was to predict the presence of aquatic micro-organisms in the San Joaquin Delta based on water quality measurements from USGS. These organisms are a key food source for the endangered Delta Smelt which has experienced a rapid population decline in the last few years."
+  ]
+},
+"SpeechProject":{
+  "ProjectTitle":"Spoken Word Classification",
+  "Image":"img/audio.png",
+  "Tools":[
+    {"title":"Python Tools:","text":"Keras, Numpy, Matplotlib, SciPy, SKImage"}
+  ],
+  "Links":[
+    {"site":"github","url":"https://github.com/rlew631/SpeechRecognition"}
+  ],
+  "PopupText":[
+    "This project involved taking a dataset which consisted of 30 different spoken words, batching them and converting them to spectrograms in order to perform classification with a custom CNN."
+  ]
+},
+"FSAE":{
+  "ProjectTitle":"Formula SAE Race Car",
+  "Image":"img/fsae.jpg",
+  "Tools":[
+    {"title":"Project Tools:","text":"FEA (Finite Element Analysis), DFM (Design for Manufacture), Proposal Writing, Leadership/Communication"}
+  ],
+  "PopupText":[
+    "I initially proposed this project to the head of the engineering department at my college. We worked together to secure grant funding and coordinated a group of students to develop and build a race car for the annual Formula SAE competition in Michigan.",
+    "This project required coordinating with various stakeholders in administration at the college as well as developing design and fabrication workshops for the students to successfully participate."
+  ],
+  "Links":[
+    {"site":"youtube","url":"https://www.youtube.com/watch?v=rsLcJnHyiQ4"},
+    {"site":"paper","url":"http://www.laccei.org/LACCEI2019-MontegoBay/student_papers/SP491.pdf"}
+  ]
+},
+"Subaru":{
+  "ProjectTitle":"Modified Subaru Street Car",
+  "Image":"img/ecu.png",
+  "Tools":[
+    {"title":"Project Tools:","text":"CANBUS Troubleshooting, Engine and ECU Parameter Logging/Modification, CNC Machining/TIG Welding, Digital Signal Analysis"}
+  ],
+  "PopupText":[
+    "After purchasing a 2008 Subaru WRX in 2013 using bitcoin mined in a college dorm room I have incrementally upgraded all of the major components in the drivetrain, fuel system, suspension and braking systems with parts which were sourced from OEM and aftermarket vendors as well as custom fabricated pieces.",
+    "Most recently I finished building and installing a custom spec engine using the OEM EJ255 case halves, EJ207 cylinder heads sourced from Japan and aftermarket internals. This required tight-tolerance CNC machining, electromechanical troubleshooting, custom wiring/electronics installation and realtime tuning of the fuel, ignition, valve timing maps and sensor calibrations for the engine."
+  ],
+  "Links":[]
+}}
