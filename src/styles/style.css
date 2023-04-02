@@ -203,6 +203,13 @@ a:hover {
   display: inline-block;
 }
 
+/* Ico Circle */
+
+.ico-circle {
+  line-height: 1.55;
+  display: block;
+}
+
 .socials .ico-circle {
   height: 40px;
   width: 40px;
@@ -211,9 +218,6 @@ a:hover {
   line-height: 1.4;
   margin: 0 15px 0 0;
   transition: all 500ms ease;
-  /* box-shadow: 0 0 0 3px #0078ff;
-  background-color: #fff;
-  color: #000000; */
   box-shadow: 0 0 0 3px #0078ff;
   background-color: #0078ff;
   color: #fff;
@@ -226,6 +230,14 @@ a:hover {
   /* box-shadow: 0 0 0 3px #cde1f8;
   background-color: #0078ff;
   color: #fff; */
+  transition: all 500ms ease;
+}
+.socials .ico-circle svg {
+  fill: #FFF;
+  transition: all 500ms ease;
+}
+.socials .ico-circle:hover svg {
+  fill: #000;
   transition: all 500ms ease;
 }
 
@@ -250,20 +262,6 @@ a:hover {
 .list-ico span {
   color: #0078ff;
   margin-right: 10px;
-}
-
-/* Ico Circle */
-
-.ico-circle {
-  height: 100px;
-  width: 100px;
-  font-size: 2rem;
-  border-radius: 50%;
-  line-height: 1.55;
-  margin: 0 auto;
-  text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
-  display: block;
 }
 
 /* Owl Carousel */
