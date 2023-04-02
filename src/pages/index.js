@@ -7,7 +7,6 @@ import About from '../components/about.jsx';
 import Portfolio from '../components/portfolio.jsx';
 import Contact from '../components/contact.jsx';
 import Footer from '../components/footer.jsx';
-import Preloader from '../components/preloader';
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
         <Portfolio />
         <Contact />
         <Footer />
-        <Preloader />
       </main>
     </>
   )
