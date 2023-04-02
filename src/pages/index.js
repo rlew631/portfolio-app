@@ -1,5 +1,4 @@
-// this is just a default import from create-next-app
-import styles from '@/styles/Home.module.css'
+import Head from 'next/head';
 
 //import components
 import Navbar from '../components/navbar.jsx';
@@ -13,9 +12,12 @@ import Preloader from '../components/preloader';
 export default function Home() {
   return (
     <>
-      <main className={styles.main}>
+      <Head>
+        <title>Ryan Lewis</title> 
+      </Head>
+      <main>
         <Navbar />
-        {/* <Intro /> */}
+        <Intro />
         <About />
         <Portfolio />
         <Contact />
