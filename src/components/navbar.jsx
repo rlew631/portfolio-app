@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import Scrollspy from 'react-scrollspy';
 
-import "bootstrap/dist/css/bootstrap.css";
-// import logo1 from '../public/img/rl_white.png';
-// import logo2 from '../public/img/rl.png';
-
 const Navbar = () => {
   const [logo, setLogo] = useState("img/rl_white.png");
   const [showNav, setShowNav] = useState(false);

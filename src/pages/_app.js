@@ -2,7 +2,7 @@
 import '@/styles/style.css'
 import "@/styles/stars.scss";
 
-import 'bootstrap/dist/css/bootstrap.css'
+// import 'bootstrap/dist/css/bootstrap.css'
 // import "bootstrap"
 import $ from "jquery";
 
