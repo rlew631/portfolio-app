@@ -30,6 +30,9 @@ function SocialSelect(props){
   else if (props.site == "github"){
     return(<Socials url={props.url} SVGData={icons.githubSVG}/>)
   }
+  else if (props.site == "paper"){
+    return(<Socials url={props.url} SVGData={icons.documentSVG}/>)
+  }
   else{return(<Socials url={props.url} SVGData={icons.chromeSVG}/>)
   }
 }
