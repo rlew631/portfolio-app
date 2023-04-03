@@ -72,20 +72,6 @@ const toolkit = (
 );
 
 class About extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      about_me: [
-
-        {
-          id: "headshot",
-          content: "img/ryan.png"
-        }
-
-      ]
-    };
-  }
-
   render() {
     return (
       <section id="about" className="about-mf sect-pt4 route">
@@ -99,11 +85,9 @@ class About extends React.Component {
                       <h5 className="title-left">About Me</h5>
                     </div>
                     <span>
-                      {this.state.about_me.map(content => {
-                        return (
-                            <img className="headshot col-md-6" alt='headshot' src="/ryan.png"></img>
-                        );
-                      })}
+                      <div className='headshot col-md-6 image-container'>
+                        <Image src='/ryan.png' className='image' fill='true' alt='headshot'/>
+                      </div>
                       <p></p>
                       <p className="lead">
                       Currently located in San Francisco, Ryan has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. He also holds a Bachelor's degree in Robotics Engineering and his passion is for discovering how new technologies can be applied to find simple and elegant solutions for existing problems. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 
 // still need to fix css so small screen dropdown is displayed on the right
+// use next/image
 const Navbar = () => {
   const [logo, setLogo] = useState("img/rl_white.png");
   const [navClass, setNavClass] = useState("navbar navbar-expand-md navbar-b navbar-trans fixed-top")

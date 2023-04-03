@@ -1,7 +1,7 @@
 {
 "CarProject":{
   "ProjectTitle":"Training Autonomous Vehicles using RL",
-  "Image":"img/minicity.png",
+  "Image":"/img/minicity.png",
   "Tools":[
     {"title":"Python Tools:", "text":"FLOW, RLlib, OpenAI Gym, SUMO, OpenStreetMaps, Tensorflow"}
   ],
@@ -15,7 +15,7 @@
 },
 "DrugProject":{
   "ProjectTitle":"Predicting Drug Effects from their Chemical Markers",
-  "Image":"img/dna.png",
+  "Image":"/img/dna.png",
   "Tools":[
     {"title":"Python Tools:","text":"SKLearn, IMBLearn, MatPlotLib, Plotly, Seaborn"},
     {"title":"Other Tools:","text":"Heroku, HTML, JavaScript, CSS"}
@@ -29,7 +29,7 @@
 },
 "NLPProject":{
   "ProjectTitle":"Comparing Stock Performance to Annual Filings using NLP",
-  "Image":"img/stocks.png",
+  "Image":"/img/stocks.png",
   "Tools":[{"title":"Python Tools:","text":"NLTK, BeautifulSoup, Matplotlib, Pandas"}],
   "Links":[
     {"site":"github","url":"https://github.com/rlew631/NLP_stock_analysis"}
@@ -41,7 +41,7 @@
 },
 "DroneProject":{
   "ProjectTitle":"Object Tracking Drone",
-  "Image":"img/drone_cad.png",
+  "Image":"/img/drone_cad.png",
   "Tools":[
     {"title":"Python Tools:", "text":"OpenCV, MAVLink"},
     {"title":"Other Tools:", "text":"CNC (G-Code), Solidworks, FEA (Finite Element Analysis), PID, Linux"}
@@ -55,7 +55,7 @@
 },
 "PlanktonProject":{
   "ProjectTitle":"Predicting Zooplankton Presence from Water Quality Data",
-  "Image":"img/map.png",
+  "Image":"/img/map.png",
   "Tools":[
     {"title":"Python Tools:","text":"SKLearn, Numpy, Pandas, MatPlotLib, Seaborn"}
   ],
@@ -68,7 +68,7 @@
 },
 "SpeechProject":{
   "ProjectTitle":"Spoken Word Classification",
-  "Image":"img/audio.png",
+  "Image":"/img/audio.png",
   "Tools":[
     {"title":"Python Tools:","text":"Keras, Numpy, Matplotlib, SciPy, SKImage"}
   ],
@@ -81,7 +81,7 @@
 },
 "FSAE":{
   "ProjectTitle":"Formula SAE Race Car",
-  "Image":"img/fsae.jpg",
+  "Image":"/img/fsae.jpg",
   "Tools":[
     {"title":"Project Tools:","text":"FEA (Finite Element Analysis), DFM (Design for Manufacture), Proposal Writing, Leadership/Communication"}
   ],
@@ -96,7 +96,7 @@
 },
 "Subaru":{
   "ProjectTitle":"Modified Subaru Street Car",
-  "Image":"img/ecu.png",
+  "Image":"/img/ecu.png",
   "Tools":[
     {"title":"Project Tools:","text":"CANBUS Troubleshooting, Engine and ECU Parameter Logging/Modification, CNC Machining/TIG Welding, Digital Signal Analysis"}
   ],

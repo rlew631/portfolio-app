@@ -2,7 +2,7 @@ import React from "react";
 import Popup from "reactjs-popup"; // consider switching to mui modal: https://mui.com/material-ui/react-modal/
 import icons from './icons.json'
 
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import projectInfo from "./projectInfo.json"
 
@@ -46,7 +46,9 @@ function Project(props) {
         <h2 className="w-title">{props.project.ProjectTitle}</h2>
         <Popup trigger={
           <button className="work-img">
-            <img src={props.project.Image} alt={props.project.ProjectTitle} className="img-fluid" />
+            <div className='image-container img-fluid'>
+              <Image src={props.project.Image} className='image' fill='true' alt={props.project.ProjectTitle}/>
+            </div>
           </button>} modal nested>
           {close => (
             <div className="modal1"> 

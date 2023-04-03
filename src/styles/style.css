@@ -6,6 +6,19 @@ body {
   color: #4e4e4e!important;
 }
 
+.image-container {
+  width: 100%;
+}
+.image-container > div {
+  position: unset !important;
+}
+.image-container .image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
 h1,
 h2,
 h3,
