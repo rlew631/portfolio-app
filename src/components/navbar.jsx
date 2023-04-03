@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 
-// still need to fix behavior for dropdown when viewing on smaller screens
+// still need to fix css so small screen dropdown is displayed on the right
 const Navbar = () => {
   const [logo, setLogo] = useState("img/rl_white.png");
   const [navClass, setNavClass] = useState("navbar navbar-expand-md navbar-b navbar-trans fixed-top")
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.pageYOffset > 50) {
@@ -31,6 +32,14 @@ const Navbar = () => {
     });
   };
 
+  const handleNavToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({top: 0,behavior: "smooth"})
+  }
+
   return (
     <nav className={navClass}>
       <div className="container navbar-contents">
@@ -44,14 +53,14 @@ const Navbar = () => {
         <button
           className="navbar-toggler collapsed"
           type="button"
-          // onClick={handleNavToggle}
+          onClick={handleNavToggle}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span/>
+          <span/>
+          <span/>
         </button>
         <div
-          className={`navbar-collapse collapse justify-content-end`}
+          className={`navbar-collapse collapse justify-content-end ${isMenuOpen ? 'show' : ''}`}
           id="navbarDefault"
         >
           <Scrollspy
@@ -61,7 +70,7 @@ const Navbar = () => {
             className="navbar-nav"
           >
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#" onClick={window.scrollTo({top: 0,behavior: "smooth"})}>
+              <a className="nav-link js-scroll" href="#" onClick={scrollToTop}>
                 Home
               </a>
             </li>
