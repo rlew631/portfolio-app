@@ -1,6 +1,5 @@
 import React from "react";
-// import imageOverlay from "../img/earth.jpg";
-import Image from 'next/image'
+// import Image from 'next/image'
 
 class Contact extends React.Component {
   constructor(props) {

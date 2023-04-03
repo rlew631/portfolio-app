@@ -1,13 +1,9 @@
 # React-portfolio
 
-## UPDATE:
-
-added firebase, use `npm run build` and `firebase deploy` to deploy to the site, __change the domain to forward to it later__
-
 ## Commands:
 
-* `npm start` to run locally
-* `npm run deploy` to deploy to the gh pages branch and update https://rlew631.github.io/portfolio/
+* `npm run dev` to run locally
+* push to `next` branch to deploy to vercel
 
 ## Task List:
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
@@ -16,7 +12,7 @@ added firebase, use `npm run build` and `firebase deploy` to deploy to the site,
 
 - Try to modularize the code for the cards so that it just maps the values from copy.json or wherever they are
 
-- [ ] figure out how to speed up load time (especially first load)
+
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
     - also look into `service worker` at the end of `index.js` 
 - [ ] Fix logo transition when using on mobile and clicking the menu button (can check with small window on mac)

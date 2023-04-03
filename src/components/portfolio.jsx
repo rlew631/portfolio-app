@@ -2,7 +2,7 @@ import React from "react";
 import Popup from "reactjs-popup"; // consider switching to mui modal: https://mui.com/material-ui/react-modal/
 import icons from './icons.json'
 
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import projectInfo from "./projectInfo.json"
 
@@ -123,7 +123,6 @@ class Portfolio extends React.Component {
           </div>
           <div className="portfolio-row">
             {/* Car Project */}
-            {}
             <Project project={projectInfo.CarProject}/>
             {/* Drug Project. MOVE SITE FROM HEROKU TO VERCEL and put link back in!*/}
             <Project project={projectInfo.DrugProject}/>
