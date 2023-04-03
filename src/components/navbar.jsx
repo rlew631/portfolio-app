@@ -1,21 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 
+// still need to fix behavior for dropdown when viewing on smaller screens
 const Navbar = () => {
   const [logo, setLogo] = useState("img/rl_white.png");
-  const [showNav, setShowNav] = useState(false);
+  const [navClass, setNavClass] = useState("navbar navbar-expand-md navbar-b navbar-trans fixed-top")
 
   const handleScroll = () => {
     if (window.pageYOffset > 50) {
       setLogo("img/rl.png");
+      setNavClass("navbar navbar-expand-md navbar-b navbar-reduce fixed-top")
     } else {
       setLogo("img/rl_white.png");
+      setNavClass("navbar navbar-expand-md navbar-b navbar-trans fixed-top")
     }
   };
 
-  const handleNavToggle = () => {
-    setShowNav(!showNav);
-  };
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll); 
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
 
   const handleNavClick = (e) => {
     e.preventDefault();
@@ -25,13 +29,12 @@ const Navbar = () => {
       top: offsetTop - 50,
       behavior: "smooth"
     });
-    setShowNav(false);
   };
 
   return (
-    <nav className="navbar navbar-expand-md navbar-b navbar-trans fixed-top">
+    <nav className={navClass}>
       <div className="container navbar-contents">
-        <a className="navbar-brand js-scroll" href="#page-top">
+        <a className="navbar-brand js-scroll" href="#">
           <img
             src={logo}
             alt="logo"
@@ -41,14 +44,14 @@ const Navbar = () => {
         <button
           className="navbar-toggler collapsed"
           type="button"
-          onClick={handleNavToggle}
+          // onClick={handleNavToggle}
         >
           <span></span>
           <span></span>
           <span></span>
         </button>
         <div
-          className={`navbar-collapse collapse justify-content-end${showNav ? " show" : ""}`}
+          className={`navbar-collapse collapse justify-content-end`}
           id="navbarDefault"
         >
           <Scrollspy
@@ -58,7 +61,7 @@ const Navbar = () => {
             className="navbar-nav"
           >
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#home" onClick={handleNavClick}>
+              <a className="nav-link js-scroll" href="#" onClick={window.scrollTo({top: 0,behavior: "smooth"})}>
                 Home
               </a>
             </li>
