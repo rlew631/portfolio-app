@@ -699,20 +699,14 @@ ABOUT
 PORTFOLIO
 */
 
-/*
-.ion-social-youtube {
-  margin-left:10px;
-}
-*/
-
 .project-link + .project-link {
   margin-left:15px;
 }
 
 .work-box {
-  margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  margin: 0 0.5rem 2rem;
+  /* -webkit-backface-visibility: hidden; */
+  /* backface-visibility: hidden; */
   background-color: #fff;
   border-radius:10px;
   height:90%;
@@ -729,6 +723,10 @@ PORTFOLIO
   border: none;
   display: block;
   overflow: hidden;
+}
+
+.work-img:focus {
+  outline: none;
 }
 
 .work-img img {
@@ -780,52 +778,6 @@ PORTFOLIO
   padding-top:4%;
   padding-bottom:2%;
   min-height: 52px;
-}
-
-button.close:focus {
-  outline: none;
-}
-
-/*
-TESTIMONIALS
-*/
-
-.testimonials .owl-carousel .owl-item img {
-  width: auto;
-}
-
-.testimonial-box {
-  color: #fff;
-  text-align: center;
-}
-
-.testimonial-box .author-test {
-  margin-top: 1rem;
-}
-
-.testimonial-box .author-test img {
-  margin: 0 auto;
-}
-
-.testimonial-box .author {
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  margin: 1rem 0;
-  display: block;
-  font-size: 1.4rem;
-}
-
-.testimonial-box .comit {
-  font-size: 2rem;
-  color: #0078ff;
-  background-color: #fff;
-  width: 52px;
-  height: 52px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-  line-height: 1.6;
 }
 
 /*
@@ -1061,10 +1013,6 @@ BUTTON
   padding: 5%
 }
 
-.close {
-  vertical-align: top;
-}
-
 /* The padding here controlls how far everything is set in from the edge of the popup window */
 .modal1 {
   padding: 5%;
@@ -1083,12 +1031,13 @@ BUTTON
 }
 
 .modal1 > .container > .close {
+  vertical-align: top;
   position: absolute;
   right: 10px;
   top: 15px;
   border-radius: 15px;
-  border: 1px solid #000000;
-  padding-bottom: 4px;
+  border: 0px;
+  outline: none;
 }
 
 .modal1 > .container > .content {

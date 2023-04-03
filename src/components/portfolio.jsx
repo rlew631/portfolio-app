@@ -9,11 +9,13 @@ import projectInfo from "./projectInfo.json"
 function Socials(props){
   return(
     <a href={props.url} className="project-link">
-      <span className="ico-circle" >
+      <span className="project-link" >
         <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
-            style={{margin: "3px 5px 5px", fill : "#0078ff"}}
+            width="40"
+            height="40"
+            style={{fill : "#0078ff"}}
         >
             <path d={props.SVGData} />
         </svg>
@@ -52,8 +54,12 @@ function Project(props) {
                 <div className="title-box-2 col-sm-11"> 
                   <div className="title-left">{props.project.ProjectTitle}</div>
                 </div>
-                <button className="close col-sm-1" onClick={close}>
-                  &times;
+                <button 
+                  className="close col-sm-1"
+                  onClick={close}
+                  style={{color:"#FFF", backgroundColor:"#0078ff", height:"2rem"}}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 512 512"><path fill="currentColor" d="m289.94 256l95-95A24 24 0 0 0 351 127l-95 95l-95-95a24 24 0 0 0-34 34l95 95l-95 95a24 24 0 1 0 34 34l95-95l95 95a24 24 0 0 0 34-34Z"/></svg>
                 </button>
               </div>
               <div className="container">
@@ -73,12 +79,14 @@ function Project(props) {
             </div>
           )}
         </Popup>
-        <div className="row work-content"> 
-          <div className="w-like col">
-            {props.project.Links.map(link => 
+        <div className="row work-content">
+          {props.project.Links.map(link => 
+              <div className="w-like col-auto">
               <SocialSelect site={link.site} url={link.url}/>
-            )}
-          </div>
+              </div>
+          )}
+        </div>
+        <div className="row work-content"> 
           <div className="tools col-sm-10">
             {props.project.Tools.map(tools => {
               return(
@@ -115,6 +123,7 @@ class Portfolio extends React.Component {
           </div>
           <div className="portfolio-row">
             {/* Car Project */}
+            {}
             <Project project={projectInfo.CarProject}/>
             {/* Drug Project. MOVE SITE FROM HEROKU TO VERCEL and put link back in!*/}
             <Project project={projectInfo.DrugProject}/>
