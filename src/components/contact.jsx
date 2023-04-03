@@ -1,5 +1,5 @@
 import React from "react";
-// import Image from 'next/image'
+import Image from 'next/image'
 
 class Contact extends React.Component {
   constructor(props) {
@@ -15,10 +15,11 @@ class Contact extends React.Component {
     return (
       <section
         className="paralax-mf footer-paralax bg-image sect-mt4 route"
-        style={{ backgroundImage: "url(" + "/img/earth.jpg" + ")" }}
+        // style={{ backgroundImage: "url(" + "/img/earth.jpg" + ")" }}
         id="contact"
       >
-        <div className="overlay-mf"></div>
+        <Image src='/img/earth.jpg' fill='true' style={{zIndex:'0'}} />
+        <div className="overlay-mf"/>
         <div className="container">
           <div id="contact" className="box-shadow-full">
             <div className="title-box-2">
@@ -34,7 +35,7 @@ class Contact extends React.Component {
                 <div id="sendmessage">
                   Your message has been sent. Thank you!
                 </div>
-                <div id="errormessage"></div>
+                <div id="errormessage"/>
                 <div className="row">
                   <div className="col-md-12 mb-3">
                     <div className="form-group">
@@ -47,7 +48,7 @@ class Contact extends React.Component {
                         data-rule="minlen:4"
                         data-msg="Please enter at least 4 chars"
                       />
-                      <div className="validation"></div>
+                      <div className="validation"/>
                     </div>
                   </div>
                   <div className="col-md-12 mb-3">
@@ -61,7 +62,7 @@ class Contact extends React.Component {
                         data-rule="email"
                         data-msg="Please enter a valid email"
                       />
-                      <div className="validation"></div>
+                      <div className="validation"/>
                     </div>
                   </div>
                   <div className="col-md-12 mb-3">
@@ -75,7 +76,7 @@ class Contact extends React.Component {
                         data-rule="minlen:4"
                         data-msg="Please enter at least 8 chars"
                       />
-                      <div className="validation"></div>
+                      <div className="validation"/>
                     </div>
                   </div>
                   <div className="col-md-12 mb-3">
@@ -88,7 +89,7 @@ class Contact extends React.Component {
                         data-msg="Please write something for us"
                         placeholder="Message"
                       ></textarea>
-                      <div className="validation"></div>
+                      <div className="validation"/>
                     </div>
                   </div>
                   <div className="col-md-12">
