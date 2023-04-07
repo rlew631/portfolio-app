@@ -6,23 +6,16 @@
 * push to `next` branch to deploy to vercel
 
 ## Task List:
-- up arrow and project links should have same css hover as "send message"
+- fix spacing on navbar dropdown do it's not below SVG
 
 - check for unused css
 
-- if LR logo on top left is changed to SVG then color and size can be handled in css and `transition` can be used to make smooth change on scroll
-
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
-
-- the transition where the header loads makes it briefly show a larger height than the final loaded height
-
-- Try to modularize the code for the cards so that it just maps the values from copy.json or wherever they are
 
 
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
     - also look into `service worker` at the end of `index.js` 
 - [ ] Fix logo transition when using on mobile and clicking the menu button (can check with small window on mac)
-- [ ] trim down unnecessary css
 - [ ] make icons on simpleicons for ros and gazebo to put in "toolkit"
 - [ ] add projects:
     - Covid Project (maybe in a new section for collaborative projects)

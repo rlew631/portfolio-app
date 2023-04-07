@@ -1,19 +1,23 @@
 import React, { useState, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 
-// still need to fix css so small screen dropdown is displayed on the right
-// use next/image
 const Navbar = () => {
-  const [logo, setLogo] = useState("img/rl_white.png");
+  const [logoColor, setLogoColor] = useState("white");
+  const [logoHeight, setLogoHeight] = useState(115);
+
   const [navClass, setNavClass] = useState("navbar navbar-expand-md navbar-b navbar-trans fixed-top")
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleScroll = () => {
     if (window.pageYOffset > 50) {
-      setLogo("img/rl.png");
+      // setLogo("img/rl.png");
+      setLogoColor("black");
+      setLogoHeight(50);
       setNavClass("navbar navbar-expand-md navbar-b navbar-reduce fixed-top")
     } else {
-      setLogo("img/rl_white.png");
+      // setLogo("img/rl_white.png");
+      setLogoColor("white");
+      setLogoHeight(115);
       setNavClass("navbar navbar-expand-md navbar-b navbar-trans fixed-top")
     }
   };
@@ -45,20 +49,27 @@ const Navbar = () => {
     <nav className={navClass}>
       <div className="container navbar-contents">
         <a className="navbar-brand js-scroll" href="#">
-          <img
-            src={logo}
-            alt="logo"
-            style={{ maxWidth: "100px" }}
-          />
+          <svg
+            width={175}
+            height={logoHeight}
+            preserveAspectRatio="xMinYMid"
+            className="logo"
+            fill={logoColor}
+            viewBox="0 0 45.9 30.8"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g stroke-width=".265" aria-label="RL">
+                <path d="M11.7 5.7H6.3v8.1h5.6c5.5 0 5.5-8.1-.2-8.1zm18.5 25.1H21l-10.5-11H6.3v11H0V0h12.8c12.1 0 13.4 13.1 5.4 17.8z"/>
+                <path d="M45.9 30.8H25.8V0h7.4v24.8h12.7z"/>
+            </g>
+          </svg>
         </a>
         <button
           className="navbar-toggler collapsed"
           type="button"
           onClick={handleNavToggle}
         >
-          <span/>
-          <span/>
-          <span/>
+          <span/><span/><span/>{/* three bars for hamburger dropdown icon */}
         </button>
         <div
           className={`navbar-collapse collapse justify-content-end ${isMenuOpen ? 'show' : ''}`}
@@ -71,22 +82,22 @@ const Navbar = () => {
             className="navbar-nav"
           >
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#" onClick={scrollToTop}>
+              <a id="navbar-link" className="nav-link js-scroll" href="#" onClick={scrollToTop}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#about" onClick={handleNavClick}>
+              <a id="navbar-link" className="nav-link js-scroll" href="#about" onClick={handleNavClick}>
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#work" onClick={handleNavClick}>
+              <a id="navbar-link" className="nav-link js-scroll" href="#work" onClick={handleNavClick}>
                 Work
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link js-scroll" href="#contact" onClick={handleNavClick}>
+              <a id="navbar-link" className="nav-link js-scroll" href="#contact" onClick={handleNavClick}>
                 Contact
               </a>
             </li>

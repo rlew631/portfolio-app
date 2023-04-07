@@ -204,9 +204,6 @@ a:hover {
   box-shadow: 0 0 0 3px #0078ff;
   background-color: #fff;
   color: #000000;
-  /* box-shadow: 0 0 0 3px #cde1f8;
-  background-color: #0078ff;
-  color: #fff; */
   transition: all 500ms ease;
 }
 .socials .ico-circle svg {
@@ -281,7 +278,14 @@ a:hover {
   border-radius: 50%;
   left: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  /* transition: background 0.5s; */
+  transition: all 500ms ease;
+}
+
+.back-to-top:hover {
+  background-color: #0062d3;
+  color: #fff;
+  transition: all 500ms ease;
 }
 
 /* Preloader */
@@ -339,6 +343,10 @@ a:hover {
 NAVBAR
 */
 
+.logo {
+  transition: all 500ms ease;
+}
+
 .navbar-b {
   transition: all .5s ease-in-out;
   background-color: transparent;
@@ -351,6 +359,10 @@ NAVBAR
   position: relative;
   padding-right: 10px;
   padding-left: 0;
+}
+
+#navbar-link {
+  padding:2%;
 }
 
 .navbar-b.navbar-trans .nav-link,
@@ -447,6 +459,10 @@ NAVBAR
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.navbar-nav {
+  align-items: end;
 }
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
@@ -598,7 +614,7 @@ PORTFOLIO
 }
 
 .work-img img {
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 
@@ -617,7 +633,16 @@ PORTFOLIO
   color: #0078ff;
 }
 
-.work-content .w-like {
+.project-link {
+  color: #0078ff;
+  transition: all 500ms ease;
+}
+
+.project-link:hover {
+  color: #0062d3;
+  transition: all 500ms ease;
+}
+/* .work-content .w-like {
   font-size: 2.5rem;
   color: #0078ff;
   float: right;
@@ -627,7 +652,7 @@ PORTFOLIO
 
 .work-content .w-like a {
   color: #0078ff;
-}
+} */
 
 .w-title {
   font-size: 1.2rem;

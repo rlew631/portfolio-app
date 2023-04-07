@@ -15,17 +15,16 @@ const DynamicModal = dynamic(() => import('./modal.jsx'), {
 function Socials(props){
   return(
     <a href={props.url} className="project-link">
-      <span className="project-link" >
         <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
             width="40"
             height="40"
-            style={{fill : "#0078ff"}}
+            fill="currentColor"
+            // style={{fill : "#0078ff"}}
         >
             <path d={props.SVGData} />
         </svg>
-      </span>
     </a>
   )
 }
