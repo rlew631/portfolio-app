@@ -46,7 +46,7 @@ function SocialSelect(props){
 
 function Project(props) {
   return(
-    <div className="col-md-4">
+    <div className="col-md-4 col-12">
       <div className="work-box">
         <h2 className="w-title">{props.project.ProjectTitle}</h2>
         <Popup trigger={

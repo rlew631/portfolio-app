@@ -345,6 +345,9 @@ NAVBAR
 
 .logo {
   transition: all 500ms ease;
+  position: fixed;
+  top: 0.5em;
+  left: 1em;
 }
 
 .navbar-b {
@@ -384,10 +387,10 @@ NAVBAR
   transition: all 500ms ease;
 }
 
-.navbar-b.navbar-trans .nav-link:hover,
+/* .navbar-b.navbar-trans .nav-link:hover,
 .navbar-b.navbar-reduce .nav-link:hover {
   color: #1B1B1B;
-}
+} */
 
 .navbar-b.navbar-trans .nav-link:hover:before,
 .navbar-b.navbar-reduce .nav-link:hover:before {
@@ -425,7 +428,7 @@ NAVBAR
   background-color: #fff;
   padding-top: 10px;
   padding-bottom: 5px;
-  box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07);
 }
 
 .navbar-b.navbar-reduce .nav-link {
@@ -449,10 +452,6 @@ NAVBAR
 
 .navbar-b.navbar-reduce .navbar-brand img{
   height: 50px;
-}
-
-.navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
 }
 
 .navbar-b .navbar-brand {
@@ -495,13 +494,15 @@ NAVBAR
 
 /* Hamburger Navbar */
 
-.navbar-toggler {
+#navbar-toggler {
   position: relative;
 }
 
-.navbar-toggler:focus,
-.navbar-toggler:active {
-  outline: 0;
+#navbar-toggler:focus {
+  /* border-width: 2px; */
+  box-shadow: none;
+  border:none;
+  -webkit-box-shadow: none;
 }
 
 .navbar-toggler span {
@@ -519,9 +520,9 @@ NAVBAR
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: -webkit-transform .35s ease-in-out;
-  transition: transform .35s ease-in-out;
-  transition: transform .35s ease-in-out, -webkit-transform .35s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
 }
 
 .navbar-toggler:not(.collapsed) span:nth-child(1) {

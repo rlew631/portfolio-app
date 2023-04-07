@@ -6,8 +6,8 @@
 * push to `next` branch to deploy to vercel
 
 ## Task List:
-- fix spacing on navbar dropdown do it's not below SVG
-
+- fix border radius on haburger icon spans
+- fix card widths when viewing on narrow screen
 - check for unused css
 
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
@@ -40,7 +40,7 @@
 
 ## Maybe List:
 
-- Update RL logo to site caliper/code logo
+- Update RL logo to site caliper/code logo (MAYBE swap both)
 - adding a less obtrusive modal for the popups in portfolio
 - create a website for the zooplankton project which operates in real time?
 - put the logic diagrams from the github projects on the pages for project descriptions. Maybe also just completely copy the github descriptions to flesh them out a bit
