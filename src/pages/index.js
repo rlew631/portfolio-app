@@ -1,12 +1,20 @@
 import Head from 'next/head';
+import dynamic from 'next/dynamic'
 
 //import components
 import Navbar from '../components/navbar.jsx';
 import Intro from '../components/intro.jsx';
 import About from '../components/about.jsx';
 import Portfolio from '../components/portfolio.jsx';
-import Contact from '../components/contact.jsx';
-import Footer from '../components/footer.jsx';
+// import Contact from '../components/contact.jsx';
+// import Footer from '../components/footer.jsx';
+
+const DynamicFooter = dynamic(() => import('../components/footer.jsx'), {
+  loading: () => <p>Loading...</p>,
+})
+const DynamicContact = dynamic(() => import('../components/contact.jsx'), {
+  loading: () => <p>Loading...</p>,
+})
 
 export default function Home() {
   return (
@@ -19,8 +27,10 @@ export default function Home() {
         <Intro />
         <About />
         <Portfolio />
-        <Contact />
-        <Footer />
+        {/* <Contact /> */}
+        <DynamicContact/>
+        {/* <Footer /> */}
+        <DynamicFooter/>
       </main>
     </>
   )

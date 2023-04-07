@@ -60,7 +60,7 @@ class Footer extends React.Component {
 
     render(){
         return(
-            <div className="footer footer-animated" style={{zIndex: 20}}>
+            <div className="footer footer-animated fadeOut" style={{zIndex: 20}}>
                 <div>
                     <a href="#" className="back-to-top" onClick={this.scrollToTop}>
                         <Chevron SVGData= {icons.chevronSVG}/>

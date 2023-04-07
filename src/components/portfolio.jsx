@@ -1,10 +1,16 @@
 import React from "react";
 import Popup from "reactjs-popup"; // consider switching to mui modal: https://mui.com/material-ui/react-modal/
 import icons from './icons.json'
+// import Modal from "./modal";
 
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 
 import projectInfo from "./projectInfo.json"
+
+const DynamicModal = dynamic(() => import('./modal.jsx'), {
+  loading: () => <p>Loading...</p>,
+})
 
 function Socials(props){
   return(
@@ -51,34 +57,11 @@ function Project(props) {
             </div>
           </button>} modal nested>
           {close => (
-            <div className="modal1"> 
-              <div className="container">
-                <div className="title-box-2 col-sm-11"> 
-                  <div className="title-left">{props.project.ProjectTitle}</div>
-                </div>
-                <button 
-                  className="close col-sm-1"
-                  onClick={close}
-                  style={{color:"#FFF", backgroundColor:"#0078ff", height:"2rem"}}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 512 512"><path fill="currentColor" d="m289.94 256l95-95A24 24 0 0 0 351 127l-95 95l-95-95a24 24 0 0 0-34 34l95 95l-95 95a24 24 0 1 0 34 34l95-95l95 95a24 24 0 0 0 34-34Z"/></svg>
-                </button>
-              </div>
-              <div className="container">
-                <div className="content">
-                  {' '}
-                  {props.project.PopupText.map(text => {
-                    return(
-                      <>
-                        {text}
-                        <p /><p/>
-                      </>
-                    )
-                    })}
-                  <br /><br/>
-                </div>
-              </div>
-            </div>
+            <DynamicModal 
+              ProjectTitle={props.project.ProjectTitle}
+              PopupText={props.project.PopupText}
+              close={close}
+            />
           )}
         </Popup>
         <div className="row work-content">
