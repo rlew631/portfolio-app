@@ -9,12 +9,13 @@ import Portfolio from '../components/portfolio.jsx';
 // import Contact from '../components/contact.jsx';
 // import Footer from '../components/footer.jsx';
 
-const DynamicFooter = dynamic(() => import('../components/footer.jsx'), {
-  loading: () => <p>Loading...</p>,
-})
 const DynamicContact = dynamic(() => import('../components/contact.jsx'), {
   loading: () => <p>Loading...</p>,
 })
+const DynamicFooter = dynamic(() => import('../components/footer.jsx'), {
+  loading: () => <p>Loading...</p>,
+})
+
 
 export default function Home() {
   return (

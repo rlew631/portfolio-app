@@ -6,6 +6,10 @@
 * push to `next` branch to deploy to vercel
 
 ## Task List:
+- up arrow and project links should have same css hover as "send message"
+
+- check for unused css
+
 - if LR logo on top left is changed to SVG then color and size can be handled in css and `transition` can be used to make smooth change on scroll
 
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
