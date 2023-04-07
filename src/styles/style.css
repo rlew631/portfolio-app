@@ -794,18 +794,6 @@ PORTFOLIO
 }
 
 /*
-CONTACT
-*/
-
-.footer-paralax {
-  padding: 4rem 0;
-}
-
-.contact-mf {
-  margin-top: 4rem;
-}
-
-/*
 FOOTER
 */
 
@@ -818,16 +806,32 @@ footer {
 
 .footer-animated {
   position: fixed;
-  display: none;
+  /* display: none; */
 }
 
-footer .copyright {
-  margin-bottom: .3rem;
+.footer-paralax {
+  padding: 4rem 0;
+}
+
+.fadeIn {
+  /* display: block; */
+  opacity:1;
+  transition: all .5s ease-in-out;
+}
+
+.fadeOut {
+  /* display: none; */
+  opacity:0;
+  transition: all .5s ease-in-out;
 }
 
 /*
 CONTACT 
 */
+
+.contact-mf {
+  margin-top: 4rem;
+}
 
 #sendmessage {
   color: #0078ff;

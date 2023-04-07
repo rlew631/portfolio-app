@@ -25,7 +25,7 @@ function Socials(props){
                     <svg
                         viewBox="0 0 512 512"
                         xmlns="http://www.w3.org/2000/svg"
-                        style={{margin: "3px 5px 5px"}}
+                        style={{margin: "2px 5px 5px"}}
                     >
                         <path d={props.SVGData}/>
                     </svg>
@@ -41,9 +41,10 @@ class Footer extends React.Component {
             const footer = document.querySelector('.footer-animated');
             if (window.pageYOffset > 100) {
                 footer.classList.remove('fadeOut');
-                footer.style.display = 'block';
+                // footer.style.display = 'block';
                 footer.classList.add('fadeIn');
             } else {
+                // footer.style.display = 'hidden';
                 footer.classList.remove('fadeIn');
                 footer.classList.add('fadeOut');
             }

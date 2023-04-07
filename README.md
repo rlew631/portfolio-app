@@ -6,6 +6,8 @@
 * push to `next` branch to deploy to vercel
 
 ## Task List:
+- if LR logo on top left is changed to SVG then color and size can be handled in css and `transition` can be used to make smooth change on scroll
+
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
 
 - the transition where the header loads makes it briefly show a larger height than the final loaded height
