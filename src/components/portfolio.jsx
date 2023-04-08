@@ -14,7 +14,7 @@ const DynamicModal = dynamic(() => import('./modal.jsx'), {
 
 function Socials(props){
   return(
-    <a href={props.url} className="project-link">
+    <a href={props.url} target="_blank" rel="noopener noreferrer" className="project-link">
         <svg
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"

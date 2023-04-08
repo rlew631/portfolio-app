@@ -6,13 +6,17 @@
 * push to `next` branch to deploy to vercel
 
 ## Task List:
-- check navbar height at different screen widths (check full width!)
+- add rel="noopener noreferrer" in all external links (see: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/)
+- add certificates
 - check for unused css
-- fix padding above "project tools" / fix card height so text doesn't come up against the bottom
 - add simpleicons locally (forthebadge) if possible to add forthebadge as well
 
-
-- put a horizontal line in the cards that seperates the links/icons from the rest of the text
+- for cards: 
+    - make the header clickable as well
+    - simpler title, ditch "python tools" and have short description (think of resume style)
+    - put a horizontal line that seperates the links/icons from the rest of the text
+    - make the project links so they open in a new tab instead of same
+    - make the pics the same size
 
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
     - also look into `service worker` at the end of `index.js` 
