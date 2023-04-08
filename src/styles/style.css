@@ -516,6 +516,7 @@ NAVBAR
   transform: rotate(0deg);
   left: 0;
   opacity: 1;
+  border-radius: 0.1em;
 }
 
 .navbar-toggler span:nth-child(1),

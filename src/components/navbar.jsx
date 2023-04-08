@@ -72,9 +72,9 @@ const Navbar = () => {
           onClick={handleNavToggle}
           style={{borderColor:toggleColor, borderWidth:'2px', transition:'all 500ms ease', margin:'0.5em', boxShadow:'none'}}
         >
-          <span classname="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
-          <span classname="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
-          <span classname="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
+          <span className="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
+          <span className="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
+          <span className="toggler-span" style={{backgroundColor:toggleColor, height:"0.2em", borderRadius:'01.em'}}/>
           {/* three bars for hamburger dropdown icon */}
         </button>
         <div
