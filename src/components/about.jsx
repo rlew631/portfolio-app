@@ -5,6 +5,8 @@ let badgeURL = "https://img.shields.io/badge/"
 
 function Badge(props) {
   return(
+    // <object style={{paddingLeft:'3px', paddingRight:'3px'}} data={badgeURL.concat(props.src)} type="image/svg+xml"/>
+    // Trying to import and svg with potentially less overhead. Seems to run slower locally
     <div className='tool-container'>
       <Image
         src={badgeURL.concat(props.src)}
@@ -21,7 +23,7 @@ const toolkit = (
 
     <div className="skillset">
       <h2 className="tool-title">
-        Data Science / Engineering
+        Data Engineering
       </h2>
       <div className="tools">
         <Badge src="C++-brown.svg?&style=for-the-badge&logo=C&logoColor=white" alt="C++"/>
@@ -36,6 +38,7 @@ const toolkit = (
         <Badge src="Pytorch-EE4C2C.svg?&style=for-the-badge&logo=pytorch&logoColor=white" alt="Pytorch"/>
         <Badge src="Keras-D00000.svg?&style=for-the-badge&logo=Keras&logoColor=white" alt="Keras"/>
         <Badge src="TensorFlow-FF6F00.svg?&style=for-the-badge&logo=TensorFlow&logoColor=white" alt="TensorFlow"/>
+        <Badge src="Ray-028CF0.svg?&style=for-the-badge&logo=Ray&logoColor=white" alt="TensorFlow"/>
 
         <Badge src="Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white" alt="Jupyter"/>
         {/* format is .../badge/<icon from https://simpleicons.org/>%20-23<hex code for background color>.svg..... */}
@@ -57,7 +60,8 @@ const toolkit = (
         <Badge src="Streamlit-FF4B4B.svg?&style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit"/>
         <Badge src="plotly-3F4F75.svg?&style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly"/>
         
-        <Badge src="PostgreSQL-336791?style=for-the-badge&logo=PostgreSQL" alt="PostGresQL"/>
+        <Badge src="PostgreSQL-4169E1?style=for-the-badge&logo=PostgreSQL&logoColor=white" alt="PostGresQL"/>
+        {/* <Badge src="PostgreSQL-336791?style=for-the-badge&logo=PostgreSQL" alt="PostGresQL"/> */}
         <Badge src="MySQL-4479A1?style=for-the-badge&logo=MySQL&logoColor=white" alt="MySQL"/>
         <Badge src="sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite"/>
       </div>
@@ -73,6 +77,7 @@ const toolkit = (
         <Badge src="github-121011.svg?&style=for-the-badge&logo=github&logoColor=white" alt="Github"/>
         <Badge src="Terraform-7B42BC.svg?&style=for-the-badge&logo=Terraform&logoColor=white" alt="Terraform"/>
         <Badge src="google%20cloud-4285F4.svg?&style=for-the-badge&logo=googlecloud&logoColor=white" alt="Google Cloud"/>
+        <Badge src="aws-232F3E.svg?&style=for-the-badge&logo=amazonaws&logoColor=FF9900" alt="Google Cloud"/>
         <Badge src="mac-os?logo=apple&logoColor=white&color=999999&style=for-the-badge" alt="MacOS"/>
         <Badge src="ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=FFFFFF" alt="Ubuntu"/>
         <Badge src="debian-A81D33?style=for-the-badge&logo=debian" alt="Debian"/>

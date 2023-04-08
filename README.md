@@ -7,12 +7,9 @@
 
 ## Task List:
 - check navbar height at different screen widths (check full width!)
-- fix border radius on haburger icon spans
 - check for unused css
 - fix padding above "project tools" / fix card height so text doesn't come up against the bottom
-- add simpleicons locally (forthebadge)
-- fix postgresql badge (contrast)
-- put in AWS badge
+- add simpleicons locally (forthebadge) if possible to add forthebadge as well
 
 
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
