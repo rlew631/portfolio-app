@@ -584,6 +584,13 @@ ABOUT
   padding-bottom: 4rem;
 }
 
+.tool-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left:6%;
+  padding-right:6%;
+}
+
 /*
 PORTFOLIO
 */
