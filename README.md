@@ -7,11 +7,11 @@
 
 ## Task List:
 - fix border radius on haburger icon spans
-- fix card widths when viewing on narrow screen
 - check for unused css
+- add simpleicons locally (forthebadge)
+- fix postgresql badge (contrast)
 
 - put a horizontal line in the cards that seperates the links/icons from the rest of the text
-
 
     - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
     - also look into `service worker` at the end of `index.js` 
