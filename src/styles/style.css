@@ -600,6 +600,7 @@ PORTFOLIO
   margin: 0 0.5rem 2rem;
   /* -webkit-backface-visibility: hidden; */
   /* backface-visibility: hidden; */
+  padding-bottom: 0.5rem;
   background-color: #fff;
   border-radius:10px;
   height:90%;
@@ -628,6 +629,9 @@ PORTFOLIO
 
 
   /* padding: 2rem 3% 1rem 4%; */
+#work-content {
+  padding-top: 0rem
+}
 .work-content {
   padding-top: 3%;
   padding-bottom: 2%;

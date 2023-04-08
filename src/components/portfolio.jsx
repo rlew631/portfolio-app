@@ -70,7 +70,7 @@ function Project(props) {
               </div>
           )}
         </div>
-        <div className="row work-content"> 
+        <div id='work-content' className="row work-content"> 
           <div className="tools col-sm-10">
             {props.project.Tools.map(tools => {
               return(
