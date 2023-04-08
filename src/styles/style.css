@@ -424,7 +424,7 @@ NAVBAR
 }
 
 .navbar-b.navbar-reduce {
-  transition: all .3s ease-in-out;
+  transition: all .5s ease-in-out;
   background-color: #fff;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -450,8 +450,8 @@ NAVBAR
   color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .navbar-brand img{
-  height: 50px;
+.navbar {
+  height: 75px;
 }
 
 .navbar-b .navbar-brand {
