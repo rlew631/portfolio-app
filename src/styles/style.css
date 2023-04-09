@@ -654,17 +654,6 @@ PORTFOLIO
   color: #0062d3;
   transition: all 500ms ease;
 }
-/* .work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
-  padding-left: 15px;
-  padding-top: -7px;
-}
-
-.work-content .w-like a {
-  color: #0078ff;
-} */
 
 .w-title {
   font-size: 1.2rem;
@@ -674,6 +663,22 @@ PORTFOLIO
   padding-top:4%;
   padding-bottom:2%;
   min-height: 52px;
+}
+
+.sub-heading-left {
+  font-size: 1rem;
+  position: relative;
+  /* padding-bottom: 1em; */
+}
+
+.sub-heading-left:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #0078ff;
+  width: 50px;
+  bottom: -22px;
+  margin-bottom: 1em
 }
 
 /*
@@ -939,7 +944,7 @@ BUTTON
 }
 
 .tools {
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
 }
 .tool-container {
   height: 32px;

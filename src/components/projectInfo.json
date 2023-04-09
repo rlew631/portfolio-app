@@ -1,25 +1,22 @@
 {
 "CarProject":{
-  "ProjectTitle":"Training Autonomous Vehicles using RL",
+  "ProjectTitle":"Autonomous Vehicle AI",
   "Image":"/img/minicity.png",
-  "Tools":[
-    {"title":"Python Tools:", "text":"FLOW, RLlib, OpenAI Gym, SUMO, OpenStreetMaps, Tensorflow"}
-  ],
+  "Description": "Trained autonomous vehicles in a SUMO using reinforcement learning",
+  "Tools":"FLOW, RLlib, OpenAI Gym, SUMO, OpenStreetMaps, Tensorflow",
   "Links":[
     {"site": "youtube", "url":"https://youtu.be/qXuBEs9G7Iw"},
     {"site": "github", "url":"https://github.com/rlew631/AutonomousVehicleSimulation"}
   ],
   "PopupText":[
-    "The purpose of this project was to create a model which develops autonomous vehicle driving policies using a deep reinforcement learning policy. See my discussion on youtube or the slide deck in the repo which goes over the general framework and the tools used."
+    "The purpose of this project was to create a model which develops autonomous vehicle driving policies using a deep reinforcement learning policy. See my discussion on youtube or the slide deck in the repo which goes over the general framework and the tools."
   ]
 },
 "DrugProject":{
-  "ProjectTitle":"Predicting Drug Effects from their Chemical Markers",
+  "ProjectTitle":"Predicting Drug Effects",
   "Image":"/img/dna.png",
-  "Tools":[
-    {"title":"Python Tools:","text":"SKLearn, IMBLearn, MatPlotLib, Plotly, Seaborn"},
-    {"title":"Other Tools:","text":"Heroku, HTML, JavaScript, CSS"}
-  ],
+  "Description": "Used chemical markers to determine a drug's method-of-action using ML",
+  "Tools":"SKLearn, IMBLearn, MatPlotLib, Plotly, Seaborn, Heroku, HTML, JavaScript, CSS",
   "Links":[
     {"site":"github", "url":"https://github.com/rlew631/DrugMethodsOfAction"}
   ],
@@ -28,9 +25,10 @@
   ]
 },
 "NLPProject":{
-  "ProjectTitle":"Comparing Stock Performance to Annual Filings using NLP",
+  "ProjectTitle":"NLP Stock Filings",
   "Image":"/img/stocks.png",
-  "Tools":[{"title":"Python Tools:","text":"NLTK, BeautifulSoup, Matplotlib, Pandas"}],
+  "Description": "Used NLP to analyze quarterly filings and predict stock movement based on changes",
+  "Tools":"NLTK, BeautifulSoup, Matplotlib, Pandas",
   "Links":[
     {"site":"github","url":"https://github.com/rlew631/NLP_stock_analysis"}
   ],
@@ -42,10 +40,8 @@
 "DroneProject":{
   "ProjectTitle":"Object Tracking Drone",
   "Image":"/img/drone_cad.png",
-  "Tools":[
-    {"title":"Python Tools:", "text":"OpenCV, MAVLink"},
-    {"title":"Other Tools:", "text":"CNC (G-Code), Solidworks, FEA (Finite Element Analysis), PID, Linux"}
-  ],
+  "Description": "Built a computer vision augmented drone to track and follow objects using openCV",
+  "Tools":"OpenCV, MAVLink, CNC Programming, Solidworks, FEA (Finite Element Analysis), PID, Linux",
   "Links":[
     {"site":"github","url":"https://github.com/rlew631/ObjectTrackingDrone"}
   ],
@@ -54,24 +50,20 @@
   ]
 },
 "PlanktonProject":{
-  "ProjectTitle":"Predicting Zooplankton Presence from Water Quality Data",
+  "ProjectTitle":"Delta Smelt Forecasting",
   "Image":"/img/map.png",
-  "Tools":[
-    {"title":"Python Tools:","text":"SKLearn, Numpy, Pandas, MatPlotLib, Seaborn"}
-  ],
-  "Links":[
-    {"site":"github","url":"https://github.com/rlew631/SanJoaquinZooplanktonPredictor"}
-  ],
+  "Description": "Used water quality data and ML to predict the presence of zooplankton in the San Joaquin Delta",
+  "Tools":"SKLearn, Numpy, Pandas, MatPlotLib, Seaborn",
+  "Links":[{"site":"github","url":"https://github.com/rlew631/SanJoaquinZooplanktonPredictor"}],
   "PopupText":[
     "The purpose of this project was to predict the presence of aquatic micro-organisms in the San Joaquin Delta based on water quality measurements from USGS. These organisms are a key food source for the endangered Delta Smelt which has experienced a rapid population decline in the last few years."
   ]
 },
 "SpeechProject":{
-  "ProjectTitle":"Spoken Word Classification",
+  "ProjectTitle":"Audio Classification",
   "Image":"/img/audio.png",
-  "Tools":[
-    {"title":"Python Tools:","text":"Keras, Numpy, Matplotlib, SciPy, SKImage"}
-  ],
+  "Description":"Developed and trained an AI model to detect and classify spoken words",
+  "Tools":"Keras, Numpy, Matplotlib, SciPy, SKImage",
   "Links":[
     {"site":"github","url":"https://github.com/rlew631/SpeechRecognition"}
   ],
@@ -82,9 +74,8 @@
 "FSAE":{
   "ProjectTitle":"Formula SAE Race Car",
   "Image":"/img/fsae.jpg",
-  "Tools":[
-    {"title":"Project Tools:","text":"FEA (Finite Element Analysis), DFM (Design for Manufacture), Proposal Writing, Leadership/Communication"}
-  ],
+  "Description":"Led the design and development of an open wheeled race car for the collegiate Formula SAE race series",
+  "Tools":"FEA (Finite Element Analysis), DFM (Design for Manufacture), Proposal Writing, Leadership/Communication",
   "PopupText":[
     "I initially proposed this project to the head of the engineering department at my college. We worked together to secure grant funding and coordinated a group of students to develop and build a race car for the annual Formula SAE competition in Michigan.",
     "This project required coordinating with various stakeholders in administration at the college as well as developing design and fabrication workshops for the students to successfully participate."
@@ -95,11 +86,10 @@
   ]
 },
 "Subaru":{
-  "ProjectTitle":"Modified Subaru Street Car",
+  "ProjectTitle":"Modified Subaru Track Car",
   "Image":"/img/ecu.png",
-  "Tools":[
-    {"title":"Project Tools:","text":"CANBUS Troubleshooting, Engine and ECU Parameter Logging/Modification, CNC Machining/TIG Welding, Digital Signal Analysis"}
-  ],
+  "Description":"Built a track capable street car and custom mapped aftermarket firmware for engine control",
+  "Tools":"CANBUS Troubleshooting, Engine and ECU Parameter Logging/Modification, CNC Machining/TIG Welding, Digital Signal Analysis",
   "PopupText":[
     "After purchasing a 2008 Subaru WRX in 2013 using bitcoin mined in a college dorm room I have incrementally upgraded all of the major components in the drivetrain, fuel system, suspension and braking systems with parts which were sourced from OEM and aftermarket vendors as well as custom fabricated pieces.",
     "Most recently I finished building and installing a custom spec engine using the OEM EJ255 case halves, EJ207 cylinder heads sourced from Japan and aftermarket internals. This required tight-tolerance CNC machining, electromechanical troubleshooting, custom wiring/electronics installation and realtime tuning of the fuel, ignition, valve timing maps and sensor calibrations for the engine."

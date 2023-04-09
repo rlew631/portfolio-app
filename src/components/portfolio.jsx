@@ -72,15 +72,11 @@ function Project(props) {
         </div>
         <div id='work-content' className="row work-content"> 
           <div className="tools col-sm-10">
-            {props.project.Tools.map(tools => {
-              return(
-                <div>
-                  <span className="w-ctegory">{tools.title}</span>
-                  <br></br>
-                  <span className="w-tools">{tools.text}</span>
-                </div>
-              )
-            })}
+            <span className="w-tools">{props.project.Description}</span>
+            <div style={{padding:'0.2em'}}/>
+            <span className="sub-heading-left">Tools Used:</span>
+            <div style={{padding:'0.2em'}}/>
+            <span className="w-tools">{props.project.Tools}</span>
           </div>
         </div>
       </div>
