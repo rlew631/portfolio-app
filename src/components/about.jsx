@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'next/image'
+import Link from "next/link";
 
 let badgeURL = "https://img.shields.io/badge/"
 
@@ -91,7 +92,7 @@ const toolkit = (
       </div>
     </div>
 
-    <div className="skillset">
+    {/* <div className="skillset">
       <h2 className="tool-title">
         Embedded Systems
       </h2>
@@ -99,6 +100,25 @@ const toolkit = (
         <Badge src="Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry%20Pi" alt="RaspberryPi"/>
         <Badge src="arduino-00979D?style=for-the-badge&logo=arduino&logoColor=FFFFFF" alt="Arduino"/>
         <Badge src="espressif-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="Espressif"/>
+      </div>
+    </div> */}
+    <div className="skillset">
+      <h2 className="tool-title">
+        Certifications
+      </h2>
+      <div className="tools">
+      <div style={{marginTop:'10px',paddingTop:'10px'}}>
+          <Link className='certification' href='https://www.credential.net/c7f616e2-9735-49fd-b021-c32e3c3c9f5c?key=a86a8d448dfda55a5d0d83909cd34aa526ce8b3acc71635ea9fae7812b08235b' target="_blank" rel="noopener noreferrer">
+            <Image src='/img/google-cloud.png' height='20' width='30'style={{marginRight:'10px'}}/>
+            Professional Data Engineer
+          </Link>
+        </div>
+        <div style={{marginTop:'10px',paddingTop:'10px'}}>
+          <Link className='certification' href='https://www.credential.net/622d4024-1d9c-4a12-9a41-a7f38478bf06' target="_blank" rel="noopener noreferrer">
+            <Image src='/img/google-cloud.png' height='20' width='30' style={{marginRight:'10px'}}/>
+            Associate Cloud Engineer
+          </Link>
+        </div>
       </div>
     </div>
   </div>

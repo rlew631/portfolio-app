@@ -102,6 +102,8 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="portfolio-row">
+            {/* W8sHub Project */}
+            <Project project={projectInfo.W8sHub}/>
             {/* Covid Project */}
             <Project project={projectInfo.CovidProject}/>
             {/* Car Project */}
