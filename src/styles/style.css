@@ -603,11 +603,13 @@ PORTFOLIO
   background-color: #fff;
   border-radius:10px;
   height:90%;
+  transition: all 500ms ease;
 }
 
-.work-box:hover img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+.work-box:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: all 500ms ease;
 }
 
 .work-img {
@@ -616,18 +618,13 @@ PORTFOLIO
   border: none;
   display: block;
   overflow: hidden;
+  padding: 0;
 }
 
 .work-img:focus {
   outline: none;
 }
 
-.work-img img {
-  transition: all 0.5s;
-}
-
-
-  /* padding: 2rem 3% 1rem 4%; */
 #work-content {
   padding-top: 0rem
 }
@@ -661,7 +658,8 @@ PORTFOLIO
   padding-left:6%;
   padding-right:6%;
   padding-top:4%;
-  padding-bottom:2%;
+  /* padding-bottom:2%; */
+  margin-bottom: 0px;
   min-height: 52px;
   text-align: center;
 }
@@ -669,7 +667,6 @@ PORTFOLIO
 .sub-heading-left {
   font-size: 1rem;
   position: relative;
-  /* padding-bottom: 1em; */
 }
 
 .sub-heading-left:before {

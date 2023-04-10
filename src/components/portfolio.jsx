@@ -50,10 +50,8 @@ function Project(props) {
       <div className="work-box">
         <h2 className="w-title">{props.project.ProjectTitle}</h2>
         <Popup trigger={
-          <button className="work-img">
-            <div className='image-container img-fluid'>
-              <Image src={props.project.Image} className='image' fill='true' alt={props.project.ProjectTitle}/>
-            </div>
+          <button className="work-img image-container">
+            <Image src={props.project.Image} className='image' fill='true' alt={props.project.ProjectTitle}/>
           </button>} modal nested>
           {close => (
             <DynamicModal 
@@ -96,7 +94,7 @@ class Portfolio extends React.Component {
                 <div className="line-mf"></div>
                 <br></br>
                 <p className="subtitle-a">
-                  Here are some of the Robotics, Data Science and Engineering projects Ryan has personally developed or overseen
+                  Here are some of the projects that Ryan has personally led and developed
                 </p>
               </div>
             </div>
