@@ -13,13 +13,12 @@
 
 - for cards: 
     - make the header clickable as well
-    - simpler title, ditch "python tools" and have short description (think of resume style)
     - put a horizontal line that seperates the links/icons from the rest of the text
-    - make the project links so they open in a new tab instead of same
+    - make smaller spacing between icons
     - make the pics the same size
 
-    - look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
-    - also look into `service worker` at the end of `index.js` 
+- look into [deadfile](https://m-izadmehr.github.io/deadfile/#/)
+- also look into `service worker` at the end of `index.js` 
 - [ ] Fix logo transition when using on mobile and clicking the menu button (can check with small window on mac)
 - [ ] make icons on simpleicons for ros and gazebo to put in "toolkit"
 - [ ] add projects:
@@ -28,6 +27,7 @@
     - CNC router project
     - This website
     - PresstaMFG
+    - w8shub
 - [ ] update projects:
     - For the drone project put stuff about control systems in description and start being sure to align keywords in the project descriptions more. Also add a link to one of the youtube videos.
     - For the drone and FSAE cars put in a grabcad link. Make the chrome icon for now if not available but make a grabcad icon for sure. It's not in IonIcons but looks open source and can contribute

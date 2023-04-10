@@ -1,4 +1,16 @@
 {
+  "CovidProject":{
+    "ProjectTitle":"COVID XPrize",
+    "Image":"/img/corona.jpg",
+    "Description": "Led ML-Ops and developed website for 1st place national ranking Covid 19 X-Prize challenge",
+    "Tools":"AWS, Jupyter, SKLearn, Heroku, Streamlit, Keras",
+    "Links":[
+      {"site": "article", "url":"https://www.businesswire.com/news/home/20210322005148/en/Metis-Alumni-Win-Honors-at-International-Competition-for-Pandemic-Response"}
+    ],
+    "PopupText":[
+      "After graduation from Metis' data science bootcamp I decided to enter in XPrize's Covid-19 competition along with 7 other alums. The purpose was to leverage AI/ML to presciribe non-pharmaceutical interventions which wouuld limit the spread of Covid-19. For the project I led the ML-ops portion of the project and coded an informational website / dashboard which displayed our model's prescribed interventions for every region in the Oxford-Cambridge Covid dataset."
+    ]
+  },
 "CarProject":{
   "ProjectTitle":"Autonomous Vehicle AI",
   "Image":"/img/minicity.png",

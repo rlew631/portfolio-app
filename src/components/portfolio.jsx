@@ -102,6 +102,8 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="portfolio-row">
+            {/* Covid Project */}
+            <Project project={projectInfo.CovidProject}/>
             {/* Car Project */}
             <Project project={projectInfo.CarProject}/>
             {/* Drug Project. MOVE SITE FROM HEROKU TO VERCEL and put link back in!*/}
