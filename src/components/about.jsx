@@ -107,13 +107,13 @@ const toolkit = (
         Certifications
       </h2>
       <div className="tools">
-      <div style={{marginTop:'10px',paddingTop:'10px'}}>
+      <div className="certs">
           <Link className='certification' href='https://www.credential.net/c7f616e2-9735-49fd-b021-c32e3c3c9f5c?key=a86a8d448dfda55a5d0d83909cd34aa526ce8b3acc71635ea9fae7812b08235b' target="_blank" rel="noopener noreferrer">
             <Image src='/img/google-cloud.png' height='20' width='30'style={{marginRight:'10px'}}/>
             Professional Data Engineer
           </Link>
         </div>
-        <div style={{marginTop:'10px',paddingTop:'10px'}}>
+        <div className="certs">
           <Link className='certification' href='https://www.credential.net/622d4024-1d9c-4a12-9a41-a7f38478bf06' target="_blank" rel="noopener noreferrer">
             <Image src='/img/google-cloud.png' height='20' width='30' style={{marginRight:'10px'}}/>
             Associate Cloud Engineer
@@ -143,8 +143,14 @@ class About extends React.Component {
                       </div>
                       <p></p>
                       <p className="lead">
-                      Currently located in San Francisco, Ryan has held positions developing products for both the private and public sectors leveraging industry best-practices to improve enterprise resource planning/quality management and monitor KPIs. He also holds a Bachelor's degree in Robotics Engineering and his passion is for discovering how new technologies can be applied to find simple and elegant solutions for existing problems. His positive outlook and ability to convey complex principles in a digestible manner make him a joy to work with!
+                      Ryan is a San Francisco-based software developer with a background in robotics engineering. Over the course of his career, he has worked with both startups and large organizations to develop and deliver innovative products that leverage industry best-practices for enterprise resource planning, quality management, and KPI monitoring.
                       </p>
+                      <p className="lead">
+                      As a skilled web developer with experience working with data, AI, and machine learning, Ryan is highly adaptable and able to quickly pick up new technologies. He is a dedicated team player with a positive outlook, known for his ability to convey complex principles in a digestible manner.
+                      </p>
+                      {/* <p className="lead">
+                      With a passion for discovering how new technologies can be applied to solve existing problems, Ryan is always exploring creative and elegant solutions. His professional demeanor and commitment to excellence make him an asset to any team he joins.
+                      </p> */}
                     </span>
                   </div>
                   </div>

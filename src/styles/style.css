@@ -679,12 +679,33 @@ PORTFOLIO
   margin-bottom: 1em
 }
 
+.certs {
+  margin-top: 10px;
+  padding-top:10px;
+  transition: all 300ms ease;
+}
+
+.certs:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transform-origin: left;
+  transition: all 300ms ease;
+}
+
 .certification {
   box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 8px;
   padding-right:12px;
+  text-decoration: auto;
 }
+
+/* .certification:hover{
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  transform-origin: left;
+  transition: all 300ms ease;
+} */
 
 /*
 FOOTER
@@ -968,6 +989,7 @@ BUTTON
 
 @media (min-width: 768px){
   .about-me {
-    padding-right: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
