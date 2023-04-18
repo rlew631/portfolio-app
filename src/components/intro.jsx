@@ -1,6 +1,10 @@
 import React from "react";
-import Typewriter from 'typewriter-effect';
+// import Typewriter from 'typewriter-effect';
+// import { useEffect } from 'react'
 
+import dynamic from 'next/dynamic';
+
+const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
 
 class Intro extends React.Component {
   render() {
@@ -17,15 +21,15 @@ class Intro extends React.Component {
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
-                <Typewriter
-                  options={{
-                    strings: 'ML / Data Engineer and Developer',
-                    autoStart: true,
-                    loop: true,
-                    delay: 70,
-                    pause: 3000,
-                  }}
-                />
+                  <Typewriter
+                    options={{
+                      strings: 'ML / Data Engineer and Developer',
+                      autoStart: true,
+                      loop: true,
+                      delay: 70,
+                      pause: 3000
+                    }}
+                  />
                 </strong>
               </p>
               <p className="pt-3">
