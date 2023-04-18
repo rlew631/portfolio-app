@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
+// import Typewriter from 'typewriter-effect'
 
 function Intro(): JSX.Element {
     return (
@@ -21,7 +22,8 @@ function Intro(): JSX.Element {
                       autoStart: true,
                       loop: true,
                       delay: 70,
-                      pause: 3000
+                      // pauseFor: 3000,
+                      // not enabled with the current interface, can use the package differently or migrate to another
                     }}
                   />
                 </strong>

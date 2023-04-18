@@ -97,8 +97,7 @@ class Contact extends React.Component<{}, ContactState> {
                     </div>
                   </div>
                   <div className="col-md-12">
-                    {status === "SUCCESS" ? <button type="submit" className="button button-a button-big button-rouded">Your message has been sent!</button> : <button type="submitted" className="button button-a button-big button-rouded">Send Message</button>}
-                    {status === "ERROR" && <button type="failed" className="button button-a button-big button-rouded">There was an error, please contact me on LinkedIn</button>}
+                    {status === "SUCCESS" ? <button type="submit" className="button button-a button-big button-rouded">Your message has been sent!</button> : <button type="submit" className="button button-a button-big button-rouded">Send Message</button>}
                   </div>
                 </div>
               </form>
