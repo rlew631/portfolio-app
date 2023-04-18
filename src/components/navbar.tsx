@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Scrollspy from 'react-scrollspy';
 
-const Navbar = () => {
+const Navbar = ():JSX.Element => {
   const [logoColor, setLogoColor] = useState("white");
   const [logoHeight, setLogoHeight] = useState(115);
   const [toggleColor, setToggleColor] = useState('black');

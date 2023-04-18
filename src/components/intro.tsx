@@ -1,13 +1,7 @@
-import React from "react";
-// import Typewriter from 'typewriter-effect';
-// import { useEffect } from 'react'
-
 import dynamic from 'next/dynamic';
-
 const Typewriter = dynamic(() => import('typewriter-effect'), { ssr: false });
 
-class Intro extends React.Component {
-  render() {
+function Intro(): JSX.Element {
     return (
       <div id="home" className="intro route bg-image background">
         <div id="stars" />
@@ -46,7 +40,6 @@ class Intro extends React.Component {
         </div>
       </div>
     );
-  }
 }
 
 export default Intro;

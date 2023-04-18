@@ -1,4 +1,4 @@
-export default function Modal(props) {
+function Modal(props) {
   return (
     <div className="modal1"> 
       <div className="container">
@@ -30,3 +30,5 @@ export default function Modal(props) {
     </div>
   )
 }
+
+export default Modal;

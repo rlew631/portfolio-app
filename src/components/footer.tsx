@@ -1,7 +1,11 @@
 import React from 'react';
 import icons from './icons.json'
 
-function Chevron(props){
+interface SVGProp {
+    SVGData: string
+}
+
+function Chevron(props: SVGProp){
     return(
         <svg
             viewBox="0 0 512 512"
@@ -12,8 +16,12 @@ function Chevron(props){
         </svg>
     )
 }
+interface SocialProp {
+    SVGData: string,
+    url : string,
+}
 
-function Socials(props){
+function Socials(props:SocialProp){
     return(
         <li>
             <a

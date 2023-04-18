@@ -1,8 +1,12 @@
 import React from "react";
 import Image from 'next/image'
 
-class Contact extends React.Component {
-  constructor(props) {
+interface ContactState {
+  status: string;
+}
+
+class Contact extends React.Component<{}, ContactState> {
+  constructor(props: {}) {
     super(props);
     this.submitForm = this.submitForm.bind(this);
     this.state = {
@@ -18,7 +22,7 @@ class Contact extends React.Component {
         // style={{ backgroundImage: "url(" + "/img/earth.jpg" + ")" }}
         id="contact"
       >
-        <Image src='/img/earth.jpg' fill='true' style={{zIndex:'0'}} />
+        <Image src='/img/earth.jpg' alt='background_img' fill={true} style={{zIndex:'0'}} />
         <div className="overlay-mf"/>
         <div className="container">
           <div id="contact" className="box-shadow-full">
@@ -84,7 +88,7 @@ class Contact extends React.Component {
                       <textarea
                         className="form-control"
                         name="message"
-                        rows="5"
+                        rows={5}
                         data-rule="required"
                         data-msg="Please write something for us"
                         placeholder="Message"

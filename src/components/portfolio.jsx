@@ -8,7 +8,7 @@ import dynamic from 'next/dynamic'
 
 import projectInfo from "./projectInfo.json"
 
-const DynamicModal = dynamic(() => import('./modal.jsx'), {
+const DynamicModal = dynamic(() => import('./modal'), {
   loading: () => <p>Loading...</p>,
 })
 

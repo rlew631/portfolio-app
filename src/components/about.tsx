@@ -4,7 +4,12 @@ import Link from "next/link";
 
 let badgeURL = "https://img.shields.io/badge/"
 
-function Badge(props) {
+interface BadgeProps {
+  src: string;
+  alt: string;
+}
+
+function Badge(props:BadgeProps) {
   return(
     // <object style={{paddingLeft:'3px', paddingRight:'3px'}} data={badgeURL.concat(props.src)} type="image/svg+xml"/>
     // Trying to import and svg with potentially less overhead. Seems to run slower locally
@@ -13,7 +18,7 @@ function Badge(props) {
         src={badgeURL.concat(props.src)}
         alt={props.alt}
         className='tool'
-        fill='true'
+        fill={true}
       />
     </div>
   )
@@ -109,13 +114,13 @@ const toolkit = (
       <div className="tools">
       <div className="certs">
           <Link className='certification' href='https://www.credential.net/c7f616e2-9735-49fd-b021-c32e3c3c9f5c?key=a86a8d448dfda55a5d0d83909cd34aa526ce8b3acc71635ea9fae7812b08235b' target="_blank" rel="noopener noreferrer">
-            <Image src='/img/google-cloud.png' height='20' width='30'style={{marginRight:'10px'}}/>
+            <Image src='/img/google-cloud.png' alt='Professional Data Engineer' height='20' width='30'style={{marginRight:'10px'}}/>
             Professional Data Engineer
           </Link>
         </div>
         <div className="certs">
           <Link className='certification' href='https://www.credential.net/622d4024-1d9c-4a12-9a41-a7f38478bf06' target="_blank" rel="noopener noreferrer">
-            <Image src='/img/google-cloud.png' height='20' width='30' style={{marginRight:'10px'}}/>
+            <Image src='/img/google-cloud.png' alt='Associate Cloud Engineer' height='20' width='30' style={{marginRight:'10px'}}/>
             Associate Cloud Engineer
           </Link>
         </div>
@@ -139,7 +144,7 @@ class About extends React.Component {
                     </div>
                     <span>
                       <div className='headshot col-md-6 image-container'>
-                        <Image src='/ryan.png' className='image' fill='true' alt='headshot' priority/>
+                        <Image src='/ryan.png' className='image' fill={true} alt='headshot' priority/>
                       </div>
                       <p></p>
                       <p className="lead">
