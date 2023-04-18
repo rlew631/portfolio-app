@@ -1,5 +1,6 @@
 import React from "react";
-import Typed from "react-typed";
+import Typewriter from 'typewriter-effect';
+
 
 class Intro extends React.Component {
   render() {
@@ -16,15 +17,15 @@ class Intro extends React.Component {
               <p className="intro-subtitle">
                 <span className="text-slider-items"></span>
                 <strong className="text-slider">
-                  <Typed
-                    strings={[
-                      "ML / Data Engineer and Developer"
-                    ]}
-                    typeSpeed={75}
-                    backDelay={3000}
-                    backSpeed={20}
-                    loop
-                  />
+                <Typewriter
+                  options={{
+                    strings: 'ML / Data Engineer and Developer',
+                    autoStart: true,
+                    loop: true,
+                    delay: 70,
+                    pause: 3000,
+                  }}
+                />
                 </strong>
               </p>
               <p className="pt-3">
