@@ -1,5 +1,5 @@
 import React from "react";
-import Popup from "reactjs-popup"; // consider switching to mui modal: https://mui.com/material-ui/react-modal/
+import Popup from "reactjs-popup"; // switch to bootstrap modal
 import icons from './icons.json'
 // import Modal from "./modal";
 

@@ -1,4 +1,9 @@
-function Modal(props) {
+interface modalProps {
+  ProjectTitle:string,
+  PopupText:string[],
+  close:any,
+}
+function Modal(props:modalProps) {
   return (
     <div className="modal1"> 
       <div className="container">
@@ -16,13 +21,13 @@ function Modal(props) {
       <div className="container">
         <div className="content">
           {' '}
-          {props.PopupText.map(text => {
+          {props.PopupText.map((text:string, index:number) => {
             return(
-              <>
+              <div key={index}>
                 {text}
                 <p /><p/>
-              </>
-            )
+              </div>
+            );
             })}
           <br /><br/>
         </div>
