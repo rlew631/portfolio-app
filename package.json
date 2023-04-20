@@ -12,6 +12,7 @@
     "@popperjs/core": "^2.11.7",
     "@types/node": "18.15.11",
     "@types/react": "18.0.37",
+    "@vercel/analytics": "^1.0.0",
     "bootstrap": "^5.2.3",
     "core-js": "^3.30.1",
     "eslint": "8.36.0",
