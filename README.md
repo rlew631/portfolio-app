@@ -9,6 +9,7 @@
 - add rel="noopener noreferrer" in all external links (see: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/)
 
 ## Task List:
+- drugproject: OVE SITE FROM HEROKU TO VERCEL and put link back in!
 - check for unused css
 - add MUI (material UI) icon
 - add simpleicons locally (forthebadge) if possible to add forthebadge as well

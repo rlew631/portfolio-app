@@ -1,5 +1,5 @@
+[
 {
-"W8sHub":{
   "ProjectTitle":"W8sHub",
   "Image":"/img/w8shub.png",
   "Description": "Developed computer vision model hub for comparing and training detection, segmentation and pose estimation models. (In Progress.)",
@@ -11,7 +11,7 @@
     "After working with various object detection models over the years and training / deploying a YOLOv5 model on a construction dataset I decided to start building out a platform which would help companies with training computer vision models. The main goal of this project is to make cutting edge computer vision models accessible to companies which might not have in-house subject matter experts and start automating the decision making process when selecting / training a model."
   ]
 },
-"CovidProject":{
+{
   "ProjectTitle":"COVID XPrize",
   "Image":"/img/corona.jpg",
   "Description": "Led ML-Ops and developed website for 1st place national ranking Covid 19 X-Prize challenge",
@@ -23,7 +23,7 @@
     "After graduation from Metis' data science bootcamp I decided to enter in XPrize's Covid-19 competition along with 7 other alums. The purpose was to leverage AI/ML to presciribe non-pharmaceutical interventions which wouuld limit the spread of Covid-19. For the project I led the ML-ops portion of the project and coded an informational website / dashboard which displayed our model's prescribed interventions for every region in the Oxford-Cambridge Covid dataset."
   ]
 },
-"CarProject":{
+{
   "ProjectTitle":"Autonomous Vehicle AI",
   "Image":"/img/minicity.png",
   "Description": "Trained autonomous vehicles in a SUMO using reinforcement learning",
@@ -36,7 +36,7 @@
     "The purpose of this project was to create a model which develops autonomous vehicle driving policies using a deep reinforcement learning policy. See my discussion on youtube or the slide deck in the repo which goes over the general framework and the tools."
   ]
 },
-"DrugProject":{
+{
   "ProjectTitle":"Predicting Drug Effects",
   "Image":"/img/dna.png",
   "Description": "Used chemical markers to determine a drug's method-of-action using ML",
@@ -48,7 +48,7 @@
     "The purpose of this project was to find a relationship between drug attributes and their corresponding methods of action. This could improve the efficiency of the drug development process by selectively eliminating drug candidates which are likely to have additional unwanted MOAs (mechanisms of action) before moving on to the screening and preclinical trial phases of development."
   ]
 },
-"NLPProject":{
+{
   "ProjectTitle":"NLP Stock Filings",
   "Image":"/img/stocks.png",
   "Description": "Used NLP to analyze quarterly filings and predict stock movement based on changes",
@@ -61,7 +61,7 @@
     "My implementation compares the cosine similarity and jaccard score of a given company's filing to the one they filed the previous year. Additionally I wrote a custom sentiment index which uses Loughran McDonald's financial NLP dictionary to determine the overall sentiment of a given year's filing."
   ]
 },
-"DroneProject":{
+{
   "ProjectTitle":"Object Tracking Drone",
   "Image":"/img/drone_cad.png",
   "Description": "Built a computer vision augmented drone to track and follow objects using openCV",
@@ -73,7 +73,7 @@
     "This project involved building a custom drone and using OpenCV on a Raspberry Pi to perform object tracking."
   ]
 },
-"PlanktonProject":{
+{
   "ProjectTitle":"Delta Smelt Forecasting",
   "Image":"/img/map.png",
   "Description": "Used water quality data and ML to predict the presence of zooplankton in the San Joaquin Delta",
@@ -83,7 +83,7 @@
     "The purpose of this project was to predict the presence of aquatic micro-organisms in the San Joaquin Delta based on water quality measurements from USGS. These organisms are a key food source for the endangered Delta Smelt which has experienced a rapid population decline in the last few years."
   ]
 },
-"SpeechProject":{
+{
   "ProjectTitle":"Audio Classification",
   "Image":"/img/audio.png",
   "Description":"Developed and trained an AI model to detect and classify spoken words",
@@ -95,7 +95,7 @@
     "This project involved taking a dataset which consisted of 30 different spoken words, batching them and converting them to spectrograms in order to perform classification with a custom CNN."
   ]
 },
-"FSAE":{
+{
   "ProjectTitle":"Formula SAE Race Car",
   "Image":"/img/fsae.jpg",
   "Description":"Led the design and development of an open wheeled race car for the collegiate Formula SAE race series",
@@ -109,7 +109,7 @@
     {"site":"paper","url":"http://www.laccei.org/LACCEI2019-MontegoBay/student_papers/SP491.pdf"}
   ]
 },
-"Subaru":{
+{
   "ProjectTitle":"Modified Subaru Track Car",
   "Image":"/img/ecu.png",
   "Description":"Built a track capable street car and custom mapped aftermarket firmware for engine control",
@@ -119,4 +119,5 @@
     "Most recently I finished building and installing a custom spec engine using the OEM EJ255 case halves, EJ207 cylinder heads sourced from Japan and aftermarket internals. This required tight-tolerance CNC machining, electromechanical troubleshooting, custom wiring/electronics installation and realtime tuning of the fuel, ignition, valve timing maps and sensor calibrations for the engine."
   ],
   "Links":[]
-}}
+}
+]

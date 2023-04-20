@@ -21,7 +21,6 @@ function Socials(props){
             width="40"
             height="40"
             fill="currentColor"
-            // style={{fill : "#0078ff"}}
         >
             <path d={props.SVGData} />
         </svg>
@@ -45,6 +44,7 @@ function SocialSelect(props){
 }
 
 function Project(props) {
+  console.log(props)
   return(
     <div className="col-md-6 col-lg-4 col-12">
       <div className="work-box">
@@ -53,13 +53,11 @@ function Project(props) {
           <button className="work-img image-container">
             <Image src={props.project.Image} className='image' fill='true' alt={props.project.ProjectTitle}/>
           </button>} modal nested>
-          {close => (
             <DynamicModal 
               ProjectTitle={props.project.ProjectTitle}
               PopupText={props.project.PopupText}
-              close={close}
+              // close={close}
             />
-          )}
         </Popup>
         <div className="row work-content">
           {props.project.Links.map(link => 
@@ -100,26 +98,9 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div className="portfolio-row">
-            {/* W8sHub Project */}
-            <Project project={projectInfo.W8sHub}/>
-            {/* Covid Project */}
-            <Project project={projectInfo.CovidProject}/>
-            {/* Car Project */}
-            <Project project={projectInfo.CarProject}/>
-            {/* Drug Project. MOVE SITE FROM HEROKU TO VERCEL and put link back in!*/}
-            <Project project={projectInfo.DrugProject}/>
-            {/* NLP Project */}
-            <Project project={projectInfo.NLPProject}/>
-            {/* Drone Project */}
-            <Project project={projectInfo.DroneProject}/>
-            {/* Zooplankton Project */}
-            <Project project={projectInfo.PlanktonProject}/>
-            {/* Speech Recognition Project */}
-            <Project project={projectInfo.SpeechProject}/>
-            {/* Formula SAE Project UPDATE ICON TO PAPER ICON*/}
-            <Project project={projectInfo.FSAE}/>
-            {/* Subaru Project */}
-            <Project project={projectInfo.Subaru}/>
+            {projectInfo.map(project => {
+              return(<Project project={project}/>)
+            })}
           </div>
         </div>
       </section>
