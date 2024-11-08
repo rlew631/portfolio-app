@@ -1,14 +1,14 @@
 [
 {
-  "ProjectTitle":"W8sHub",
-  "Image":"/img/w8shub.png",
-  "Description": "Developed computer vision model hub for comparing and training detection, segmentation and pose estimation models. (In Progress.)",
-  "Tools":"Vercel, NextJS, React, NodeJS, Material UI, OpenCV, Python, Git / GitHub, Docker",
+  "ProjectTitle":"Allmende Labs",
+  "Image":"/img/allmendelabs.png",
+  "Description": "Architected and built AI-Native SaaS platform",
+  "Tools":"React, Go, Material UI, OpenAI, Python, AWS, Auth0, Stripe",
   "Links":[
-    {"site": "site", "url":"https://www.w8shub.com"}
+    {"site": "site", "url":"https://allmendelabs.com"}
   ],
   "PopupText":[
-    "After working with various object detection models over the years and training / deploying a YOLOv5 model on a construction dataset I decided to start building out a platform which would help companies with training computer vision models. The main goal of this project is to make cutting edge computer vision models accessible to companies which might not have in-house subject matter experts and start automating the decision making process when selecting / training a model."
+    "After having built out several fullstack apps using AI I decided to build out an AI native app which utilizes LLMs to provide a personalized experience to the users and productize it."
   ]
 },
 {
